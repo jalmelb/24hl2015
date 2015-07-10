@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+    <title>
+      {{ _site_name }}
+      {{ if segment_1 }}
+      – {{ title }}
+      {{ endif }}
+    </title>
+
+    <!-- styles -->
+    {{ if is_dev }}
+      <link rel="stylesheet" href="{{ theme:css src="24hl" }}" rel="styleheet">
+    {{ else }}
+      <link rel="stylesheet" href="{{ theme:css src="24hl.min" }}">
+    {{ endif }}
+
+
+    <!-- favicon -->
+    <link rel="shortcut icon" type="image/png" href="{{ theme:img src="favicon.png" }}">
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+  </head>
+  <body id="top" class="page-{{segment_1}}">
+    <header class="header">
+      <div class="container">
+        <h1 class="block-logo">
+
+          <a href="{{ homepage }}">
+            <span class="top"></span>
+            <span class="bottom"></span>
+            <span class="description">
+              {{ _site_name|widont }}
+            </span>
+          </a>
+        </h1>
+
+        <nav class="block-navigation">
+          <ul class="nav nav-main" role="navigation">
+            {{ nav from="/" }}
+              <li {{ if is_current || is_parent }} class="nav-active"{{ endif }}>
+                <a href="{{ url }}">
+                  {{ title }}
+                </a>
+              </li>
+            {{ /nav }}
+          </ul>
+
+        </nav>
+      </div>
+    </header>
+
+
+    {{ layout_content }}
+
+
+
+    <footer class="footer" role="contentinfo">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-2">
+
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    {{ location:start_maps smart_include="true" }}
+
+
+    {{ if is_dev }}
+      <script src="{{ theme:js src='jquery.js' }}"></script>
+      <script src="{{ theme:js src='smooth-scroll.min.js' }}"></script>
+      <script src="{{ theme:js }}"></script>
+    	<script src="//localhost:8090/livereload.js"></script>
+    {{ else }}
+      <script src="{{ theme:js src='min/kinder.min.js' }}"></script>
+    {{ endif }}
+  </body>
+</html>
