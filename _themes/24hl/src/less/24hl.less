@@ -1,0 +1,613 @@
+// Core variables and mixins
+@import "bootstrap/variables.less";
+@import "bootstrap/mixins.less";
+
+// Reset and dependencies
+@import "bootstrap/normalize.less";
+@import "bootstrap/print.less";
+
+
+// Project specific colors
+@color-red: #d21e17;
+@color-red-secondary: #e26f6f;
+
+@color-blue: #019fe3;
+@color-blue-secondary: #67cbf6;
+
+@color-green: #75B72A;
+@color-green-secondary: #97D057;
+
+@color-purple: #754B99;
+@color-purple-secondary: #B790DD;
+
+@color-yellow: #FCBF15;
+@color-yellow-secondary: #FDD973;
+
+@imagePath: '/_themes/kinder/img';
+
+@brand-primary:         @color-blue;
+@brand-success:         @color-green;
+@brand-info:            #5bc0de;
+@brand-warning:         #f0ad4e;
+@brand-danger:          #d9534f;
+
+// Bootstrap patterns
+@import "bootstrap/scaffolding.less";
+@import "bootstrap/type.less";
+@import "bootstrap/grid.less";
+@import "bootstrap/buttons.less";
+@import "bootstrap/labels.less";
+@import "bootstrap/forms.less";
+@import "bootstrap/media.less";
+@import "bootstrap/utilities.less";
+@import "bootstrap/responsive-utilities.less";
+
+
+img {
+  max-width: 100%;
+}
+
+
+// Actual Kinder stuff
+.header {
+
+  .nav {
+    float:right;
+
+    @media (max-width: @screen-xs-max) {
+      float: none;
+    }
+  }
+
+  a {
+    color:#fff;
+  }
+}
+
+.nav-main {
+  margin:0;
+  list-style:none;
+
+  > li {
+    float:left;
+
+    > a {
+      display:block;
+      padding:40px 20px 20px;
+      color:#373736;
+      border-bottom-left-radius:7px;
+      border-bottom-right-radius:7px;
+
+      &:hover {
+        text-decoration:none;
+        background: @gray-lighter;
+      }
+    }
+
+    @media (max-width: @screen-xs-max) {
+      float: none;
+
+      > a {
+        background: @gray-lighter;
+        border-radius: 0;
+        padding: 5px 20px;
+      }
+    }
+
+    &.nav-active {
+      > a {
+        color:@white;
+        font-weight:bold;
+        background:#9D9D9C;
+
+        .page-about & {
+          background: @color-blue-secondary;
+        }
+        .page-investors & {
+          background: @color-green-secondary;
+        }
+        .page-careers & {
+          background: @color-purple-secondary;
+        }
+        .page-contact-us & {
+          background:@color-red-secondary;
+        }
+        .page-sell-your-centre & {
+          background:@color-yellow-secondary;
+        }
+      }
+    }
+  }
+}
+
+
+h2 {
+  padding:30px 10px 0;
+  border-radius: 7px;
+  color: @white;
+
+  .page-about & {
+    background: @color-blue;
+  }
+  .page-investors & {
+    background: @color-green;
+  }
+  .page-careers & {
+    background: @color-purple;
+  }
+  .page-contact-us & {
+    background:@color-red;
+  }
+  .page-sell-your-centre & {
+    background:@color-yellow;
+  }
+
+}
+h4 {
+  font-weight: bolder;
+}
+
+// Sidebar
+// -----------
+
+.sidebar {
+  margin-top:90px;
+
+  @media (max-width: @screen-xs-max) {
+    margin-top:10px;
+  }
+}
+
+.nav {
+  list-style: none;
+  margin:0;
+  padding:0;
+
+
+  font-size: 16px;
+
+  li {
+    padding:0 0 5px;
+  }
+
+  > .active a {
+
+    font-weight: bold;
+  }
+
+  a {
+    color: #373736;
+  }
+}
+
+.nav-parent {
+  font-weight:bold;
+  border-bottom:solid 3px @gray-dark;
+  margin-bottom:20px;
+}
+
+.torso {
+  margin-bottom:50px;
+}
+
+.block-logo {
+  @width: 150px;
+  @height: 55px;
+
+  display:block;
+  width: @width;
+  height: @height;
+  float:left;
+  margin:15px 0 0;
+
+  @media (max-width: @screen-xs-max) {
+    float: none;
+    margin:15px auto 10px;
+  }
+
+  a {
+    position: relative;
+    display:block;
+    width:@width;
+    height:@height;
+    .footer & {
+     background-image: url('@{imagePath}/Think_childcare_logo_dark_2015_v2.svg');
+     text-indent: -9999em;
+     background-size: @width @height;
+
+   }
+    .description {
+      .text-hide();
+    }
+
+    .top,
+    .bottom {
+      position:absolute;
+      top:0;
+      left:0;
+
+      -webkit-transition: opacity 0.5s ease-in-out;
+      -moz-transition: opacity 0.5s ease-in-out;
+      -o-transition: opacity 0.5s ease-in-out;
+      -ms-transition: opacity 0.5s ease-in-out;
+      transition: opacity 0.5s ease-in-out;
+      display:block;
+      width:@width;
+      height:@height;
+      background-size: @width @height;
+    }
+
+    .top {
+      background-image: url('@{imagePath}/Think_childcare_logo_2015_v2.svg');
+    }
+
+    .bottom {
+      opacity: 0;
+      background-image: url('@{imagePath}/Think_childcare_home-01.svg');
+    }
+
+    &:hover {
+      .top {
+        opacity: 0;
+      }
+
+      .bottom {
+        opacity: 1;
+      }
+    }
+  }
+
+}
+
+.home-hero {
+  position: relative;
+  height: 860px;
+  background:url('@{imagePath}/blocks_homepage.jpg') no-repeat center center #fff;
+  background-size: auto 100%;
+  margin-bottom:30px;
+
+  .container {
+   position: relative;
+
+
+  .home-hero-punchline{
+    position:relative;
+    display:inline;
+
+    margin:0;
+    font-size:46px;
+
+    top:135px;
+    left:90px;
+
+
+    letter-spacing: -3px;
+    line-height: 46px;
+
+
+    @media (max-width: @screen-xs-max) {
+      top: 30px;
+      left:15px;
+      right:15px;
+      line-height: 30px;
+
+      font-size:30px;
+    }
+  }
+}
+}
+
+
+.home-hero-secondary {
+  background:#f3efde;
+
+  .container {
+    height:400px;
+    position:relative;
+  }
+
+}
+
+.home-hero-overview {
+  position:absolute;
+  right:0px;
+  bottom:0px;
+
+  width:33%;
+
+}
+
+.home-blocks {
+  margin-top:20px;
+  /* margin-bottom:20px; */
+  background:#f3efde;
+
+  .row {
+    margin-bottom:30px;
+  }
+}
+
+.row-fifths > div {
+  width:20%;
+
+  @media (max-width: @screen-xs-max) {
+    width: 100%;
+  }
+}
+
+.footer {
+  padding-top:20px;
+  padding-bottom:20px;
+  background:#373736;
+
+  color:@white;
+
+
+  a {
+    color:@white;
+  }
+
+
+  h4 {
+    margin:0;
+    font-size:20px;
+    padding-bottom: 15px;
+  }
+
+  ul {
+    list-style:none;
+    margin:0;
+    padding:0;
+  }
+
+  @media (max-width: @screen-xs-max) {
+    text-align: center;
+
+    h4 {
+      margin-top:5px;
+    }
+
+  }
+
+}
+
+
+.footer-overview {
+
+  text-align:right;
+
+  p {
+    margin:0;
+  }
+
+  .block-logo {
+    text-align:left;
+    margin:0 auto;
+  }
+
+  .think-lines {
+    display:inline-block;
+  }
+
+  @media (max-width: @screen-xs-max) {
+    text-align:center;
+  }
+}
+
+.think-lines {
+  width:227px;
+  height:7px;
+  background:url('@{imagePath}/think_lines.png') center center no-repeat;
+}
+
+.footer-subtext {
+  text-align: right;
+  font-size: 8px;
+  a { color: #019fe3; }
+
+}
+.page-seperator {
+  margin:20px 0;
+
+  .think-lines {
+    display:inline-block;
+  }
+}
+
+
+.contact-details {
+  color: #808285;
+}
+
+// Helpers
+.align-center {
+  text-align:center;
+  letter-spacing: -3px;
+}
+
+.block {
+  padding:@padding-base-horizontal;
+  background:#D21E17;
+  margin-bottom: 20px;
+  //min-height:300px;
+
+  color:@white;
+
+  border-radius:7px;
+
+  font-size:16px;
+
+  p {
+    margin:0;
+  }
+
+}
+
+.block-red {
+  background: @color-red;
+}
+
+.block-red-secondary {
+  background: @color-red-secondary;
+}
+
+.block-blue {
+  background: @color-blue;
+}
+
+.block-blue-secondary {
+  background: @color-blue-secondary;
+}
+.block-purple {
+  background: #7053A2;
+}
+.block-purple-secondary {
+  background: #b790dd;
+}
+.block-yellow {
+  background: #FDBD26;
+}
+.block-green {
+  background: #71BE44;
+}
+.block-green-secondary {
+  background: @color-green-secondary;
+}
+.block-text-medium {
+  font-size: 40px;
+  letter-spacing: -2px;
+  line-height: 35px;
+}
+.block-text-large {
+  font-size: 45px;
+  letter-spacing: -2px;
+  line-height: 35px;
+}
+.block-text-values-small {
+  font-size: 30px;
+  letter-spacing: -2px;
+  line-height: 30px;
+  font-weight: 200;
+}
+.block-text-values-medium {
+  font-size: 35px;
+  letter-spacing: -2px;
+  line-height: 37px;
+}
+.block-text-values-xs {
+  font-size: 30px;
+  letter-spacing: -1px;
+  line-height: 25px;
+}
+.block-text-values-home {
+  font-size: 21px;
+  letter-spacing: -0.5px;
+  line-height: 25px;
+  font-weight: 200;
+}
+
+.list-staff {}
+.list-staff-member {}
+
+.list-staff-name {
+  margin:0 0 5px;
+  background: @color-blue;
+  padding:20px 10px 5px;
+
+  color: @white;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.list-staff-about {
+  margin:0 0 0px;
+  background: @color-blue;
+  padding:20px 10px 5px;
+
+  color: @white;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.list-page-home {
+  margin: 0;
+  margin-bottom: 20px;
+  display: block;
+  background: #019fe3;
+  padding: 20px 0px 0px;
+  color: #ffffff;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.home-page-header {
+  margin: 0;
+  display: block;
+  background: #019fe3;
+  padding: 20px 10px 5px;
+  color: #ffffff;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+
+}
+.list-staff-content {
+  padding: 0 10px;
+}
+
+.list-staff-title {
+  font-weight: bold;
+}
+
+.list-pages {}
+
+.list-page {
+  margin: 0px;
+  display: block;
+  margin-bottom: 20px;
+  background: @color-blue;
+  padding:20px 0px 0px;
+  color: @white;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+
+  &:hover {
+    text-decoration: none;
+    background: darken(@color-blue, 10%);
+  }
+}
+.list-page-header {
+    margin: 0px;
+    display:block;
+    color: @white;
+    padding: 0px 0px 0px 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-bottom: 5px;
+}
+
+.list-job {
+  padding-bottom:10px;
+  margin-bottom:30px;
+  border-bottom:solid 1px @gray-lighter;
+}
+
+
+.list-files {
+
+  .list-file {
+    display:block;
+    padding: 10px 20px;
+
+    color: @white;
+
+    + .list-file {
+      margin-top:1px;
+    }
+
+    &:nth-child(odd) {
+      background: @color-green;
+    }
+
+    &:nth-child(even) {
+      background:@color-green-secondary;
+    }
+  }
+}
