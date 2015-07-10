@@ -13,7 +13,7 @@
 ###########################################################################################
 
 # Enter your license key
-_license_key:
+_license_key: 73200417-ccac-4d8d-aba0-1c3bc553cd07
 
 _language: en
 
@@ -21,13 +21,13 @@ _language: en
 _site_root: /
 
 # Name of your site
-_site_name: Another Awesome Statamic Site
+_site_name: 24hour lime. Digital Design
 
 # Change the folder name for your content directory
 _content_root: _content
 
 # Used for permalinks
-_site_url: http://statamic.com
+_site_url: http://24hourlime.com.au
 
 # Folder name of your desired theme
 _theme: acadia
