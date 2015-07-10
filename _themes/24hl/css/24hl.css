@@ -2637,46 +2637,8 @@ h2 {
   border-radius: 7px;
   color: #fa6022;
 }
-.page-about h2 {
-  background: #019fe3;
-}
-.page-investors h2 {
-  background: #75b72a;
-}
-.page-careers h2 {
-  background: #754b99;
-}
-.page-contact-us h2 {
-  background: #d21e17;
-}
-.page-sell-your-centre h2 {
-  background: #fcbf15;
-}
 h4 {
   font-weight: bolder;
-}
-.sidebar {
-  margin-top: 90px;
-}
-@media (max-width: 767px) {
-  .sidebar {
-    margin-top: 10px;
-  }
-}
-.nav {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  font-size: 16px;
-}
-.nav li {
-  padding: 0 0 5px;
-}
-.nav > .active a {
-  font-weight: bold;
-}
-.nav a {
-  color: #373736;
 }
 .nav-parent {
   font-weight: bold;
@@ -2716,34 +2678,6 @@ h4 {
   text-shadow: none;
   background-color: transparent;
   border: 0;
-}
-.block-logo a .top,
-.block-logo a .bottom {
-  position: absolute;
-  top: 0;
-  left: 0;
-  -webkit-transition: opacity 0.5s ease-in-out;
-  -moz-transition: opacity 0.5s ease-in-out;
-  -o-transition: opacity 0.5s ease-in-out;
-  -ms-transition: opacity 0.5s ease-in-out;
-  transition: opacity 0.5s ease-in-out;
-  display: block;
-  width: 150px;
-  height: 55px;
-  background-size: 150px 55px;
-}
-.block-logo a .top {
-  background-image: url('/_themes/24hl/img/');
-}
-.block-logo a .bottom {
-  opacity: 0;
-  background-image: url('/_themes/24hl/img/');
-}
-.block-logo a:hover .top {
-  opacity: 0;
-}
-.block-logo a:hover .bottom {
-  opacity: 1;
 }
 .home-hero {
   position: relative;
@@ -2848,18 +2782,6 @@ h4 {
     text-align: center;
   }
 }
-.think-lines {
-  width: 227px;
-  height: 7px;
-  background: url('/_themes/24hl/img/think_lines.png') center center no-repeat;
-}
-.footer-subtext {
-  text-align: right;
-  font-size: 8px;
-}
-.footer-subtext a {
-  color: #019fe3;
-}
 .page-seperator {
   margin: 20px 0;
 }
@@ -2883,65 +2805,6 @@ h4 {
 }
 .block p {
   margin: 0;
-}
-.block-red {
-  background: #d21e17;
-}
-.block-red-secondary {
-  background: #e26f6f;
-}
-.block-blue {
-  background: #019fe3;
-}
-.block-blue-secondary {
-  background: #67cbf6;
-}
-.block-purple {
-  background: #7053A2;
-}
-.block-purple-secondary {
-  background: #b790dd;
-}
-.block-yellow {
-  background: #FDBD26;
-}
-.block-green {
-  background: #71BE44;
-}
-.block-green-secondary {
-  background: #97d057;
-}
-.block-text-medium {
-  font-size: 40px;
-  letter-spacing: -2px;
-  line-height: 35px;
-}
-.block-text-large {
-  font-size: 45px;
-  letter-spacing: -2px;
-  line-height: 35px;
-}
-.block-text-values-small {
-  font-size: 30px;
-  letter-spacing: -2px;
-  line-height: 30px;
-  font-weight: 200;
-}
-.block-text-values-medium {
-  font-size: 35px;
-  letter-spacing: -2px;
-  line-height: 37px;
-}
-.block-text-values-xs {
-  font-size: 30px;
-  letter-spacing: -1px;
-  line-height: 25px;
-}
-.block-text-values-home {
-  font-size: 21px;
-  letter-spacing: -0.5px;
-  line-height: 25px;
-  font-weight: 200;
 }
 .list-staff-name {
   margin: 0 0 5px;
