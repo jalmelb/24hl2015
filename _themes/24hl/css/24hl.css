@@ -286,12 +286,12 @@ textarea {
   line-height: inherit;
 }
 a {
-  color: #019fe3;
+  color: #fa6022;
   text-decoration: none;
 }
 a:hover,
 a:focus {
-  color: #016a97;
+  color: #cb3e05;
   text-decoration: underline;
 }
 a:focus {
@@ -528,10 +528,10 @@ mark,
   color: #777777;
 }
 .text-primary {
-  color: #019fe3;
+  color: #fa6022;
 }
 a.text-primary:hover {
-  color: #017bb0;
+  color: #e44505;
 }
 .text-success {
   color: #3c763d;
@@ -559,10 +559,10 @@ a.text-danger:hover {
 }
 .bg-primary {
   color: #fff;
-  background-color: #019fe3;
+  background-color: #fa6022;
 }
 a.bg-primary:hover {
-  background-color: #017bb0;
+  background-color: #e44505;
 }
 .bg-success {
   background-color: #dff0d8;
@@ -1475,8 +1475,8 @@ fieldset[disabled] .btn-default.active {
 }
 .btn-primary {
   color: #ffffff;
-  background-color: #019fe3;
-  border-color: #018dca;
+  background-color: #fa6022;
+  border-color: #f94e09;
 }
 .btn-primary:hover,
 .btn-primary:focus,
@@ -1485,8 +1485,8 @@ fieldset[disabled] .btn-default.active {
 .btn-primary.active,
 .open > .dropdown-toggle.btn-primary {
   color: #ffffff;
-  background-color: #017bb0;
-  border-color: #01638d;
+  background-color: #e44505;
+  border-color: #c13a04;
 }
 .btn-primary:active,
 .btn-primary.active,
@@ -1511,11 +1511,11 @@ fieldset[disabled] .btn-primary:active,
 .btn-primary.disabled.active,
 .btn-primary[disabled].active,
 fieldset[disabled] .btn-primary.active {
-  background-color: #019fe3;
-  border-color: #018dca;
+  background-color: #fa6022;
+  border-color: #f94e09;
 }
 .btn-primary .badge {
-  color: #019fe3;
+  color: #fa6022;
   background-color: #ffffff;
 }
 .btn-success {
@@ -1699,7 +1699,7 @@ fieldset[disabled] .btn-danger.active {
   background-color: #ffffff;
 }
 .btn-link {
-  color: #019fe3;
+  color: #fa6022;
   font-weight: normal;
   border-radius: 0;
 }
@@ -1720,7 +1720,7 @@ fieldset[disabled] .btn-link {
 }
 .btn-link:hover,
 .btn-link:focus {
-  color: #016a97;
+  color: #cb3e05;
   text-decoration: underline;
   background-color: transparent;
 }
@@ -1794,11 +1794,11 @@ a.label:focus {
   background-color: #5e5e5e;
 }
 .label-primary {
-  background-color: #019fe3;
+  background-color: #fa6022;
 }
 .label-primary[href]:hover,
 .label-primary[href]:focus {
-  background-color: #017bb0;
+  background-color: #e44505;
 }
 .label-success {
   background-color: #75b72a;
@@ -2588,7 +2588,8 @@ img {
   max-width: 100%;
 }
 .header .nav {
-  float: right;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media (max-width: 767px) {
   .header .nav {
@@ -2607,10 +2608,10 @@ img {
 }
 .nav-main > li > a {
   display: block;
-  padding: 40px 20px 20px;
+  padding: 10px 15px 15px;
   color: #373736;
-  border-bottom-left-radius: 7px;
-  border-bottom-right-radius: 7px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 .nav-main > li > a:hover {
   text-decoration: none;
@@ -2631,25 +2632,10 @@ img {
   font-weight: bold;
   background: #9D9D9C;
 }
-.page-about .nav-main > li.nav-active > a {
-  background: #67cbf6;
-}
-.page-investors .nav-main > li.nav-active > a {
-  background: #97d057;
-}
-.page-careers .nav-main > li.nav-active > a {
-  background: #b790dd;
-}
-.page-contact-us .nav-main > li.nav-active > a {
-  background: #e26f6f;
-}
-.page-sell-your-centre .nav-main > li.nav-active > a {
-  background: #fdd973;
-}
 h2 {
   padding: 30px 10px 0;
   border-radius: 7px;
-  color: #ffffff;
+  color: #fa6022;
 }
 .page-about h2 {
   background: #019fe3;
@@ -2720,7 +2706,7 @@ h4 {
   height: 55px;
 }
 .footer .block-logo a {
-  background-image: url('/_themes/kinder/img/Think_childcare_logo_dark_2015_v2.svg');
+  background-image: url('/_themes/24hl/img/');
   text-indent: -9999em;
   background-size: 150px 55px;
 }
@@ -2747,11 +2733,11 @@ h4 {
   background-size: 150px 55px;
 }
 .block-logo a .top {
-  background-image: url('/_themes/kinder/img/Think_childcare_logo_2015_v2.svg');
+  background-image: url('/_themes/24hl/img/');
 }
 .block-logo a .bottom {
   opacity: 0;
-  background-image: url('/_themes/kinder/img/Think_childcare_home-01.svg');
+  background-image: url('/_themes/24hl/img/');
 }
 .block-logo a:hover .top {
   opacity: 0;
@@ -2762,7 +2748,7 @@ h4 {
 .home-hero {
   position: relative;
   height: 860px;
-  background: url('/_themes/kinder/img/blocks_homepage.jpg') no-repeat center center #ffffff;
+  background: url('/_themes/24hl/img/') no-repeat center center #ffffff;
   background-size: auto 100%;
   margin-bottom: 30px;
 }
@@ -2865,7 +2851,7 @@ h4 {
 .think-lines {
   width: 227px;
   height: 7px;
-  background: url('/_themes/kinder/img/think_lines.png') center center no-repeat;
+  background: url('/_themes/24hl/img/think_lines.png') center center no-repeat;
 }
 .footer-subtext {
   text-align: right;

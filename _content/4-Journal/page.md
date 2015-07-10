@@ -1,5 +1,5 @@
 ---
-title: Calendar
+title: Journal
 _fieldset: page
 _template: calendar
 ---

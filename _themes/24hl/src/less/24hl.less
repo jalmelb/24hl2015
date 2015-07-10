@@ -23,9 +23,12 @@
 @color-yellow: #FCBF15;
 @color-yellow-secondary: #FDD973;
 
-@imagePath: '/_themes/kinder/img';
+@color-orange: #FA6022;
 
-@brand-primary:         @color-blue;
+
+@imagePath: '/_themes/24hl/img';
+
+@brand-primary:         @color-orange;
 @brand-success:         @color-green;
 @brand-info:            #5bc0de;
 @brand-warning:         #f0ad4e;
@@ -48,11 +51,12 @@ img {
 }
 
 
-// Actual Kinder stuff
+// Actual 24HL stuff
 .header {
 
   .nav {
-    float:right;
+    margin-left: auto;
+    margin-right: auto;
 
     @media (max-width: @screen-xs-max) {
       float: none;
@@ -73,10 +77,10 @@ img {
 
     > a {
       display:block;
-      padding:40px 20px 20px;
+      padding:10px 15px 15px;
       color:#373736;
-      border-bottom-left-radius:7px;
-      border-bottom-right-radius:7px;
+      border-bottom-left-radius:5px;
+      border-bottom-right-radius:5px;
 
       &:hover {
         text-decoration:none;
@@ -100,21 +104,7 @@ img {
         font-weight:bold;
         background:#9D9D9C;
 
-        .page-about & {
-          background: @color-blue-secondary;
-        }
-        .page-investors & {
-          background: @color-green-secondary;
-        }
-        .page-careers & {
-          background: @color-purple-secondary;
-        }
-        .page-contact-us & {
-          background:@color-red-secondary;
-        }
-        .page-sell-your-centre & {
-          background:@color-yellow-secondary;
-        }
+
       }
     }
   }
@@ -124,7 +114,7 @@ img {
 h2 {
   padding:30px 10px 0;
   border-radius: 7px;
-  color: @white;
+  color: @color-orange;
 
   .page-about & {
     background: @color-blue;
@@ -211,7 +201,7 @@ h4 {
     width:@width;
     height:@height;
     .footer & {
-     background-image: url('@{imagePath}/Think_childcare_logo_dark_2015_v2.svg');
+     background-image: url('@{imagePath}/');
      text-indent: -9999em;
      background-size: @width @height;
 
@@ -238,12 +228,12 @@ h4 {
     }
 
     .top {
-      background-image: url('@{imagePath}/Think_childcare_logo_2015_v2.svg');
+      background-image: url('@{imagePath}/');
     }
 
     .bottom {
       opacity: 0;
-      background-image: url('@{imagePath}/Think_childcare_home-01.svg');
+      background-image: url('@{imagePath}/');
     }
 
     &:hover {
@@ -262,7 +252,7 @@ h4 {
 .home-hero {
   position: relative;
   height: 860px;
-  background:url('@{imagePath}/blocks_homepage.jpg') no-repeat center center #fff;
+  background:url('@{imagePath}/') no-repeat center center #fff;
   background-size: auto 100%;
   margin-bottom:30px;
 
