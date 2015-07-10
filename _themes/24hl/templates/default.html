@@ -10,7 +10,7 @@
 				{{ theme:partial src="blog-listing" use_context="true" }}
 			{{ endif }}
 		{{ /entries:listing }}
-		
+
 		{{ entries:pagination folder="blog" limit="3" }}
 			{{ if next_page || previous_page }}
 				<div class="pagination clearfix">

@@ -30,7 +30,7 @@ _content_root: _content
 _site_url: http://24hourlime.com.au
 
 # Folder name of your desired theme
-_theme: acadia
+_theme: 24hl
 
 # Entries should include timestamp YYYY-MM-DD-HHII
 _entry_timestamps: false
@@ -42,7 +42,7 @@ _date_format: 'F jS, Y'
 _time_format: 'g:i.s a'
 
 # Timezone
-_timezone: America/New_York
+_timezone: Australia/Sydney
 
 # List of desired taxonomy triggers
 _taxonomy:
