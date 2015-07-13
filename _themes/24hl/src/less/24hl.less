@@ -79,8 +79,7 @@ img {
       display:block;
       padding:10px 15px 15px;
       color:#fff;
-      border-bottom-left-radius:5px;
-      border-bottom-right-radius:5px;
+
 
       &:hover {
         text-decoration:none;
@@ -201,7 +200,7 @@ h5 {
     left:500px;
 
 
-    letter-spacing: 5px;
+    letter-spacing: 4px;
     line-height: 46px;
 
 
@@ -217,7 +216,19 @@ h5 {
 }
 }
 
+.home-number {
+    color: #fff;
+    font-weight: 700;
 
+    margin:0;
+    font-size:25px;
+
+
+}
+
+.verticalline {
+  border-left: thick solid #fff;
+}
 
 .row-fifths > div {
   width:20%;
@@ -308,16 +319,40 @@ h5 {
   letter-spacing: -3px;
 }
 
-.block {
-  padding:10px 50px 50px;
-  width: 100%;
+.block-item {
+  display: flex;
+  padding:10px 50px 10px;
+  width: 250px;
+  height: 90px;
+
+
+  line-height: 14px;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 3px;
+  font-size: 1.5em;
+  text-align: left;
+}
+
+
+
+.flex-container {
+  padding: 0;
+  margin: 0;
+  list-style: none;
   background:#3d3c3c;
-  margin-bottom: 20px;
   opacity: 0.3;
-  color:@white;
-  font-size:16px;
-  position: relative;
-  top: 35%;
+  margin-top: 335px;
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  -webkit-flex-flow: row wrap;
+  justify-content: flex-start;
+
 
   p {
     margin:0;
