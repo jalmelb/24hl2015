@@ -2695,13 +2695,12 @@ h5 {
 }
 .home-hero .container .home-hero-punchline {
   position: relative;
-  display: inline;
   color: #fff;
   font-weight: 100;
   margin: 0;
-  font-size: 30px;
-  top: 135px;
-  left: 90px;
+  font-size: 15px;
+  top: 352px;
+  left: 500px;
   letter-spacing: 5px;
   line-height: 46px;
 }
@@ -2781,12 +2780,15 @@ h5 {
   letter-spacing: -3px;
 }
 .block {
-  padding: 12px;
-  background: #D21E17;
+  padding: 10px 50px 50px;
+  width: 100%;
+  background: #3d3c3c;
   margin-bottom: 20px;
+  opacity: 0.3;
   color: #ffffff;
-  border-radius: 7px;
   font-size: 16px;
+  position: relative;
+  top: 35%;
 }
 .block p {
   margin: 0;
