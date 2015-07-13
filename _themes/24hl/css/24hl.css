@@ -2719,8 +2719,9 @@ h5 {
 }
 .verticalline {
   border-left: 1px solid;
-  color: #c7c7c7;
-  opacity: 1;
+  height: 796px;
+  color: #ffffff;
+  opacity: .3;
 }
 .boldnumbers {
   color: #fff;
@@ -2738,21 +2739,15 @@ h5 {
   }
 }
 .footer {
+  text-align: left;
   padding-top: 5px;
   padding-bottom: 5px;
   background: #000;
+  font-size: 10px;
   color: #f67e4e;
 }
 .footer a {
   color: #ffffff;
-}
-@media (max-width: 767px) {
-  .footer {
-    text-align: center;
-  }
-  .footer h4 {
-    margin-top: 5px;
-  }
 }
 .footer-overview {
   text-align: right;
