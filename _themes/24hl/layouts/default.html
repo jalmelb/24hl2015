@@ -21,21 +21,12 @@
 
     <!-- favicon -->
     <link rel="shortcut icon" type="image/png" href="{{ theme:img src="favicon.png" }}">
-    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Oxygen:300,400,700' rel='stylesheet' type='text/css'>
   </head>
   <body id="top" class="page-{{segment_1}}">
-    <header class="header">
-      <div class="container">
-        <h1 class="block-logo">
 
-          <a href="{{ homepage }}">
-            <span class="top"></span>
-            <span class="bottom"></span>
-            <span class="description">
-              {{ _site_name|widont }}
-            </span>
-          </a>
-        </h1>
+
+          
 
         <nav class="block-navigation">
           <ul class="nav nav-main" role="navigation">
@@ -49,8 +40,7 @@
           </ul>
 
         </nav>
-      </div>
-    </header>
+
 
 
     {{ layout_content }}
@@ -76,7 +66,7 @@
       <script src="{{ theme:js }}"></script>
     	<script src="//localhost:8090/livereload.js"></script>
     {{ else }}
-      <script src="{{ theme:js src='min/kinder.min.js' }}"></script>
+      <script src="{{ theme:js src='min/24hl.min.js' }}"></script>
     {{ endif }}
   </body>
 </html>

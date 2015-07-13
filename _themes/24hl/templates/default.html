@@ -1,11 +1,11 @@
-<div class="row">
-	<div class="eight columns">
+<div class="home-hero">
+	<div class="container">
+		<div class="home-hero-punchline">24HOUR LIME. DIGITAL DESIGN.</div>
+	</div>
+</div>
 		{{ entries:listing folder="blog" limit="3" }}
 			{{ if no_results }}
-				<p class="sorry">
-					No journal posts have been posted yet.<br>
-					Check back soon.
-				</p>
+
 			{{ else }}
 				{{ theme:partial src="blog-listing" use_context="true" }}
 			{{ endif }}
@@ -25,7 +25,5 @@
 		{{ /entries:pagination }}
 	</div>
 
-	<div class="four columns sidebar" role="complementary">
-		{{ theme:partial src="common-sidebar" }}
-	</div>
+
 </div>

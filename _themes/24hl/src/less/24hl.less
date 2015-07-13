@@ -78,7 +78,7 @@ img {
     > a {
       display:block;
       padding:10px 15px 15px;
-      color:#373736;
+      color:#fff;
       border-bottom-left-radius:5px;
       border-bottom-right-radius:5px;
 
@@ -123,6 +123,11 @@ h4 {
   font-weight: bolder;
 }
 
+h5 {
+  font-weight: 100;
+  color: #fff;
+
+}
 
 
 
@@ -173,11 +178,11 @@ h4 {
 }
 
 .home-hero {
-  position: relative;
-  height: 860px;
-  background:url('@{imagePath}/') no-repeat center center #fff;
-  background-size: auto 100%;
-  margin-bottom:30px;
+  background:url('@{imagePath}/orange_polygon.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 
   .container {
    position: relative;
@@ -186,15 +191,17 @@ h4 {
   .home-hero-punchline{
     position:relative;
     display:inline;
+    color: #fff;
+    font-weight: 100;
 
     margin:0;
-    font-size:46px;
+    font-size:30px;
 
     top:135px;
     left:90px;
 
 
-    letter-spacing: -3px;
+    letter-spacing: 5px;
     line-height: 46px;
 
 
@@ -211,34 +218,6 @@ h4 {
 }
 
 
-.home-hero-secondary {
-  background:#f3efde;
-
-  .container {
-    height:400px;
-    position:relative;
-  }
-
-}
-
-.home-hero-overview {
-  position:absolute;
-  right:0px;
-  bottom:0px;
-
-  width:33%;
-
-}
-
-.home-blocks {
-  margin-top:20px;
-  /* margin-bottom:20px; */
-  background:#f3efde;
-
-  .row {
-    margin-bottom:30px;
-  }
-}
 
 .row-fifths > div {
   width:20%;
