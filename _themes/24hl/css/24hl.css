@@ -2861,7 +2861,6 @@ h5 {
   justify-content: space-between;
 }
 .flex-2-column p {
-  visibility: hidden;
   margin: 0;
 }
 .column-item {
