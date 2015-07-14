@@ -23,7 +23,7 @@
 @color-yellow: #FCBF15;
 @color-yellow-secondary: #FDD973;
 
-@color-orange: #f67e4e;
+@color-orange: #FA6022;
 
 
 @imagePath: '/_themes/24hl/img';
@@ -266,6 +266,8 @@ h5 {
   opacity: .3;
 }
 
+
+
 .boldnumbers {
   color: #fff;
   font-weight: 700;
@@ -377,7 +379,8 @@ h5 {
 
 .flex-4-column {
   padding: 0;
-  margin: 0;
+  margin-left: 40px;
+  margin-right: 40px;
   list-style: none;
   display: flex;
   flex-flow: row nowrap;
@@ -389,7 +392,7 @@ h5 {
   display: flex;
 
   -webkit-flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
 
 
   p {
@@ -400,7 +403,8 @@ h5 {
 
 .flex-2-column {
   padding: 0;
-  margin: 0;
+  margin-left: 40px;
+  margin-right: 40px;
   list-style: none;
   display: flex;
   flex-flow: row nowrap;
@@ -412,7 +416,7 @@ h5 {
   display: flex;
 
   -webkit-flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
 
 
   p {
@@ -425,7 +429,7 @@ h5 {
 .column-item {
   display: flex;
   padding:20px 10px 20px;
-  width: 250px;
+  width: 350px;
   line-height: 12px;
   color: #000;
   font-weight: 100;
@@ -437,7 +441,7 @@ h5 {
 .column-item-dark {
   display: flex;
   padding:20px 10px 20px;
-  width: 250px;
+  width: 350px;
   line-height: 12px;
   color: @white;
   font-weight: 100;
@@ -448,7 +452,8 @@ h5 {
 
 .flex-page-header {
   padding: 0;
-  margin: 0;
+  margin-left: 40px;
+  margin-right: 40px;
   list-style: none;
   display: flex;
   flex-flow: row nowrap;
@@ -468,13 +473,12 @@ h5 {
   }
 
 .column-page-header {
-    display: flex;
-
-    width: 450px;
-    line-height: 12px;
-    font-weight: 100;
-    font-size: 12px;
-    text-align: left;
+  position:relative;
+  color: @color-orange;
+  font-weight: 700;
+  margin:0;
+  font-size:46px;
+  letter-spacing: 0px;
 
   }
 
