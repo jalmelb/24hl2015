@@ -38,7 +38,7 @@ module.exports = function(grunt) {
     uglify: {
       prod: {
         files: {
-          '_themes/24hl/js/min/kinder.min.js': ['_themes/24hl/js/*.js']
+          '_themes/24hl/js/min/24hl.min.js': ['_themes/24hl/js/*.js']
         }
       }
     },
