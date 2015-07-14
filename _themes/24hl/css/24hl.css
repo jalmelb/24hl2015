@@ -2714,9 +2714,9 @@ h5 {
 .page-header {
   position: relative;
   color: #f67e4e;
-  font-weight: 400;
+  font-weight: 700;
   margin: 0;
-  font-size: 18px;
+  font-size: 16px;
   letter-spacing: 4px;
 }
 .home-number {
@@ -2763,23 +2763,15 @@ h5 {
 .footer-overview p {
   margin: 0;
 }
-.footer-overview .block-logo {
-  text-align: left;
-  margin: 0 auto;
-}
-.footer-overview .think-lines {
-  display: inline-block;
-}
 @media (max-width: 767px) {
   .footer-overview {
     text-align: center;
   }
 }
 .page-seperator {
-  margin: 20px 0;
-}
-.page-seperator .think-lines {
-  display: inline-block;
+  border-bottom: 1px solid;
+  color: #000;
+  padding: 10px 10px;
 }
 .contact-details {
   color: #808285;
@@ -2821,13 +2813,14 @@ h5 {
   padding: 0;
   margin: 0;
   list-style: none;
+  flex-flow: row nowrap;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
   -webkit-flex-direction: row;
-  justify-content: flex-start;
+  justify-content: space-around;
 }
 .flex-4-column p {
   margin: 0;
@@ -2836,9 +2829,31 @@ h5 {
   display: flex;
   padding: 20px 10px 20px;
   width: 250px;
-  height: 90px;
   line-height: 12px;
   color: #000;
+  font-weight: 100;
+  font-size: 12px;
+  text-align: left;
+}
+.flex-page-header {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  flex-flow: row nowrap;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+}
+.flex-page-header p {
+  margin: 0;
+}
+.flex-page-header .column-page-header {
+  display: flex;
+  width: 450px;
+  line-height: 12px;
   font-weight: 100;
   font-size: 12px;
   text-align: left;

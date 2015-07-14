@@ -219,11 +219,10 @@ h5 {
 .page-header {
   position:relative;
   color: @color-orange;
-  font-weight: 400;
+  font-weight: 700;
   margin:0;
-  font-size:18px;
+  font-size:16px;
   letter-spacing: 4px;
-
 }
 
 .home-number {
@@ -268,7 +267,7 @@ h5 {
   background:#000;
   font-size: 10px;
   color:@color-orange;
-  
+
 
 
   a {
@@ -285,15 +284,6 @@ h5 {
     margin:0;
   }
 
-  .block-logo {
-    text-align:left;
-    margin:0 auto;
-  }
-
-  .think-lines {
-    display:inline-block;
-  }
-
   @media (max-width: @screen-xs-max) {
     text-align:center;
   }
@@ -303,11 +293,9 @@ h5 {
 
 
 .page-seperator {
-  margin:20px 0;
-
-  .think-lines {
-    display:inline-block;
-  }
+  border-bottom: 1px solid;
+  color: #000;
+  padding: 10px 10px;
 }
 
 
@@ -367,6 +355,8 @@ h5 {
   padding: 0;
   margin: 0;
   list-style: none;
+  display: flex;
+  flex-flow: row nowrap;
 
   display: -webkit-box;
   display: -moz-box;
@@ -375,7 +365,7 @@ h5 {
   display: flex;
 
   -webkit-flex-direction: row;
-  justify-content: flex-start;
+  justify-content: space-around;
 
 
   p {
@@ -388,9 +378,6 @@ h5 {
   display: flex;
   padding:20px 10px 20px;
   width: 250px;
-  height: 90px;
-
-
   line-height: 12px;
   color: #000;
   font-weight: 100;
@@ -399,6 +386,39 @@ h5 {
 
 }
 
+.flex-page-header {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-flow: row nowrap;
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  -webkit-flex-direction: row;
+
+
+
+  p {
+    margin:0;
+  }
+
+.column-page-header {
+    display: flex;
+
+    width: 450px;
+    line-height: 12px;
+    font-weight: 100;
+    font-size: 12px;
+    text-align: left;
+
+  }
+
+}
 .list-staff {}
 .list-staff-member {}
 
