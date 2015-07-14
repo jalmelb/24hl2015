@@ -2711,6 +2711,14 @@ h5 {
     font-size: 30px;
   }
 }
+.page-header {
+  position: relative;
+  color: #f67e4e;
+  font-weight: 400;
+  margin: 0;
+  font-size: 18px;
+  letter-spacing: 4px;
+}
 .home-number {
   color: #fff;
   font-weight: 700;
@@ -2739,10 +2747,6 @@ h5 {
   }
 }
 .footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
   text-align: left;
   padding-top: 5px;
   padding-bottom: 5px;
@@ -2812,6 +2816,32 @@ h5 {
 }
 .flex-container p {
   margin: 0;
+}
+.flex-4-column {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  justify-content: flex-start;
+}
+.flex-4-column p {
+  margin: 0;
+}
+.column-item {
+  display: flex;
+  padding: 20px 10px 20px;
+  width: 250px;
+  height: 90px;
+  line-height: 12px;
+  color: #000;
+  font-weight: 100;
+  font-size: 12px;
+  text-align: left;
 }
 .list-staff-name {
   margin: 0 0 5px;
