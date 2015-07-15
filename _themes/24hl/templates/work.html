@@ -1,4 +1,4 @@
-
+<!-- top blurb and header bit -->
 			<ul class="flex-4-column">
 				<li class="column-page-header">
 					<h2 class="column-item">CLIENT WORK</h2>
@@ -14,28 +14,57 @@
 					<p></p>
 				</li>
 			</ul>
-			<div class="flex-page-header">
-				<div class="column-item">
-        <div class="article">
-          <h2>{{ title|smartypants|widont }}</h2>
-          {{ content|widont }}
-<!-- need to get articles overflowing into 4 columns -->
-          <div class="list-pages row">
-            {{ pages }}
-              <div class="col-xs-12 col-sm-6">
-                <a href="{{href}}" class="list-page">
-                  <span class="h3 list-page-header">{{ title }}</span>
-                  <img src="{{filePath}}" alt="">
 
-                </a>
+<!-- content bit -->
+<ul class="flex-4-column">
+	<li class="column-page-header">
+		<p>
+		<img src="/assets/img/about-1.jpg" alt="domoto logo" height="220">
+		This is some text
+		</p>
+	</li>
+	<li class="column-page-header">
+		<p>
+		<img src="/assets/img/about-1.jpg" alt="domoto logo" height="220">
+		This is some text
+		</p>
+	</li><li class="column-page-header">
+		<p>
+		<img src="/assets/img/about-1.jpg" alt="domoto logo" height="220">
+		This is some text
+		</p>
+	</li><li class="column-page-header">
+		<p>
+		<img src="/assets/img/about-1.jpg" alt="domoto logo" height="220">
+		This is some text
+		</p>
+	</li>
+</ul>
 
-              </div>
-              {{ if !(index % 2) }}
-                <div class="clearfix visible-sm-block"></div>
-              {{ /if}}
-            {{ /pages }}
-          </div>
-
+<ul class="flex-4-column">
+	<li class="column-page-header">
+		<p>
+		<img src="/assets/img/about-1.jpg" alt="domoto logo" height="220">
+		This is some text
+		</p>
+	</li>
+	<li class="column-page-header">
+		<p>
+		<img src="/assets/img/about-1.jpg" alt="domoto logo" height="220">
+		This is some text
+		</p>
+	</li><li class="column-page-header">
+		<p>
+		<img src="/assets/img/about-1.jpg" alt="domoto logo" height="220">
+		This is some text
+		</p>
+	</li><li class="column-page-header">
+		<p>
+		<img src="/assets/img/about-1.jpg" alt="domoto logo" height="220">
+		This is some text
+		</p>
+	</li>
+</ul>
           <div class="list-files">
             {{ files }}
               <a class="list-file" href="{{ filePath }}">

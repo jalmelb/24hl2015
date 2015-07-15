@@ -1,0 +1,13 @@
+---
+first_name: jal
+last_name: ""
+roles:
+  - admin
+email: jarrod@24hourlime.com.au
+password: ""
+_uid: PmYSLP55a5c40a4c0caz1MqMDHY
+password_hash: $2a$08$x6TgzELN8mc0G7ZQaLqZqO3Ets8/jNMxOSo5hN.Do/nY1nmVl4Jt.
+---
+Have no fears, your password, while plain text to start, will be encrypted upon first login. If ever you need to manually reset a password you can wipe out the password fields and start anew.
+
+Your username is the name of the YAML file. That would make this user "admin".
