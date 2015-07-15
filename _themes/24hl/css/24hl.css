@@ -2609,7 +2609,7 @@ img {
 .nav-main > li > a {
   display: block;
   padding: 10px 15px 15px;
-  color: #fff;
+  color: #000;
 }
 .nav-main > li > a:hover {
   text-decoration: none;
@@ -2626,9 +2626,8 @@ img {
   }
 }
 .nav-main > li.nav-active > a {
-  color: #ffffff;
-  font-weight: bold;
-  background: #9D9D9C;
+  color: #fa6022;
+  font-weight: 700;
 }
 h2 {
   padding: 30px 10px 0;

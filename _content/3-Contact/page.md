@@ -1,5 +1,5 @@
 ---
-title: Contact
+title: CONTACT
 _fieldset: page
 _template: calendar
 ---

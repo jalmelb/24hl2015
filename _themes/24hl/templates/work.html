@@ -1,46 +1,51 @@
-<div class="row">
-	<div class="eight columns">
-		<div class="article">
-			{{ theme:partial src="breadcrumbs" }}
-			<h1>{{ title|smartypants|widont }}</h1>
-            
-			{{ content|widont }}
-			
-			{{ if _folder != '/' }}
-				{{ pages:previous folder="{_folder}" }}
-					{{ unless no_results }}
-						<div class="pagination">
-							<a href="{{ url }}" class="older">
-								<small>Previously</small><br>
-								{{ title|widont }}
-							</a>
-							
-						{{ if !has_next }}
-							</div>
-						{{ endif }}
-					{{ endif }}
-							
-				{{ /pages:previous }}
-				
-				{{ pages:next folder="{_folder}" }}
-					{{ unless no_results }}
-						{{ if !has_previous }}
-							<div class="pagination">
-						{{ endif }}
-							
-						<a href="{{ url }}" class="newer">
-							<small>Next Up</small><br>
-							{{ title|widont }}
-						</a>
-						
-						</div>
-					{{ endif }}
-				{{ /pages:next }}
-			{{ endif }}
-		</div>
-	</div>
-	<div class="four columns sidebar" role="complementary">
-		{{ theme:partial src="sub-navigation" }}
-		{{ theme:partial src="common-sidebar" }}
-	</div>
-</div>
+
+			<ul class="flex-4-column">
+				<li class="column-page-header">
+					<h2 class="page-header">CLIENT WORK</h2>
+				</li>
+				<li class="column-page-header">
+					<h2 class="column-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fermentum lobortis porta. Mauris faucibus hendrerit pulvinar. Pellentesque sagittis, enim eu ornare dapibus, ligula nibh fermentum mauris, nec interdum lorem ante vel nunc.</h2>
+				</li>
+				<li class="column-page-header">
+					<h2 class="column-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fermentum lobortis porta. Mauris faucibus hendrerit pulvinar. Pellentesque sagittis, enim eu ornare dapibus, ligula nibh fermentum mauris, nec interdum lorem ante vel nunc.</h2>
+				</li>
+				<li class="column-page-header">
+					<h2 class="column-item"></h2>
+					<p></p>
+				</li>
+			</ul>
+			<div class="flex-page-header">
+				<div class="column-item">
+        <div class="article">
+          <h2>{{ title|smartypants|widont }}</h2>
+          {{ content|widont }}
+<!-- need to get articles overflowing into 4 columns -->
+          <div class="list-pages row">
+            {{ pages }}
+              <div class="col-xs-12 col-sm-6">
+                <a href="{{href}}" class="list-page">
+                  <span class="h3 list-page-header">{{ title }}</span>
+                  <img src="{{filePath}}" alt="">
+
+                </a>
+
+              </div>
+              {{ if !(index % 2) }}
+                <div class="clearfix visible-sm-block"></div>
+              {{ /if}}
+            {{ /pages }}
+          </div>
+
+          <div class="list-files">
+            {{ files }}
+              <a class="list-file" href="{{ filePath }}">
+                {{ title }} {{ description }}
+              </a>
+            {{ /files }}
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+</main>
