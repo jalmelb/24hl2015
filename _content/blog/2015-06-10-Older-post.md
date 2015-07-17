@@ -1,5 +1,5 @@
 ---
-title: Older post
+title: OLDER POST
 ---
 Older post
 

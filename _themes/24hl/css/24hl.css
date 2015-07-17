@@ -2921,12 +2921,16 @@ h5 {
 .journal-layout {
   padding: 90px 10px 10px 10px;
   position: absolute;
-  top: 90px;
+  top: 120px;
   left: 0px;
 }
 .journal-container {
   background-color: #000;
   padding: 10px 10px 10px 10px;
+  color: #fff;
+}
+.journal-container a {
+  color: #fff;
 }
 .column-item-dark {
   display: flex;
