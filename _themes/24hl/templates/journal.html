@@ -34,6 +34,7 @@
   <script src="/_themes/24hl/js/particles.js"></script>
   <script src="/_themes/24hl/js/app.js"></script>
 
+
   <div class="journal-nav">
     <nav class="block-navigation">
   		<ul class="nav nav-dark" role="navigation">
@@ -48,6 +49,8 @@
 
   	</nav>
   </div>
+
+
 
   <div class="journal-layout">
     <h2 class="page-header">24HOUR JOURNAL</h2>
@@ -68,3 +71,21 @@
       </div>
     </div>
   </div>
+
+  {{ layout_content }}
+
+
+
+  {{ location:start_maps smart_include="true" }}
+
+
+  {{ if is_dev }}
+    <script src="{{ theme:js src='jquery.js' }}"></script>
+    <script src="{{ theme:js src='smooth-scroll.min.js' }}"></script>
+    <script src="{{ theme:js }}"></script>
+    <script src="//localhost:8090/livereload.js"></script>
+  {{ else }}
+    <script src="{{ theme:js src='min/24hl.min.js' }}"></script>
+  {{ endif }}
+  </body>
+  </html>

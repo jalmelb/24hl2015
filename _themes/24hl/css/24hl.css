@@ -2630,6 +2630,8 @@ img {
 }
 .nav-dark {
   padding-top: 25px;
+  width: 50%;
+  margin: 0 auto;
   list-style: none;
 }
 .nav-dark > li {
@@ -2911,8 +2913,8 @@ h5 {
 }
 .journal-nav {
   padding: 25px 10px 10px 10px;
-  width: 50%;
-  margin: 0 auto;
+  width: 100%;
+  text-align: center;
 }
 .journal-layout {
   padding: 90px 10px 10px 10px;
