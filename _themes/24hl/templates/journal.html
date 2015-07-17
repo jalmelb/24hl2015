@@ -1,29 +1,4 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-    <title>
-      {{ _site_name }}
-      {{ if segment_1 }}
-      – {{ title }}
-      {{ endif }}
-    </title>
-
-    <!-- styles -->
-    {{ if is_dev }}
-      <link rel="stylesheet" href="{{ theme:css src="24hl" }}" rel="styleheet">
-    {{ else }}
-      <link rel="stylesheet" href="{{ theme:css src="24hl.min" }}">
-    {{ endif }}
-
-
-    <!-- favicon -->
-    <link rel="shortcut icon" type="image/png" href="{{ theme:img src="favicon.png" }}">
-    <link href='http://fonts.googleapis.com/css?family=Oxygen:300,400,700' rel='stylesheet' type='text/css'>
-  </head>
-  <body id="top" class="page-{{segment_1}}">
 
 <!-- particles.js container -->
 
@@ -35,21 +10,20 @@
   <script src="/_themes/24hl/js/app.js"></script>
 
 
-  <div class="journal-nav">
-    <nav class="block-navigation">
-  		<ul class="nav nav-dark" role="navigation">
-  			{{ nav from="/" }}
-  				<li {{ if is_current || is_parent }} class="nav-active"{{ endif }}>
-  					<a href="{{ url }}">
-  						{{ title }}
-  					</a>
-  				</li>
-  			{{ /nav }}
-  		</ul>
 
-  	</nav>
-  </div>
-
+<div class="journal-nav">
+  <nav class="block-navigation">
+    <ul class="nav nav-dark" role="navigation">
+      {{ nav from="/" }}
+        <li {{ if is_current || is_parent }} class="nav-active"{{ endif }}>
+          <a href="{{ url }}">
+            {{ title }}
+          </a>
+        </li>
+      {{ /nav }}
+    </ul>
+  </nav>
+</div>
 
 
   <div class="journal-layout">
@@ -71,21 +45,3 @@
       </div>
     </div>
   </div>
-
-  {{ layout_content }}
-
-
-
-  {{ location:start_maps smart_include="true" }}
-
-
-  {{ if is_dev }}
-    <script src="{{ theme:js src='jquery.js' }}"></script>
-    <script src="{{ theme:js src='smooth-scroll.min.js' }}"></script>
-    <script src="{{ theme:js }}"></script>
-    <script src="//localhost:8090/livereload.js"></script>
-  {{ else }}
-    <script src="{{ theme:js src='min/24hl.min.js' }}"></script>
-  {{ endif }}
-  </body>
-  </html>

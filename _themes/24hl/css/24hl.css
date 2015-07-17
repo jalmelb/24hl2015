@@ -2912,9 +2912,11 @@ h5 {
   text-align: left;
 }
 .journal-nav {
-  padding: 25px 10px 10px 10px;
+  padding: 25px 5px 5px 5px;
+  position: absolute;
+  top: 0px;
   width: 100%;
-  text-align: center;
+  margin: 0 auto;
 }
 .journal-layout {
   padding: 90px 10px 10px 10px;
