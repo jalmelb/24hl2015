@@ -1,5 +1,5 @@
 //
-// Kinder js
+// 24hl js
 // ----------------------------
 
 var windowHeight = $(window).innerHeight() - $('.header').height();
