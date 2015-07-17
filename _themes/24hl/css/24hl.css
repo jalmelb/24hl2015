@@ -2597,7 +2597,7 @@ img {
   }
 }
 .header a {
-  color: #fff;
+  color: #000;
 }
 .nav-main {
   margin: 0;
@@ -2628,6 +2628,35 @@ img {
   color: #fa6022;
   font-weight: 700;
 }
+.nav-dark {
+  margin: 0;
+  list-style: none;
+}
+.nav-dark > li {
+  float: left;
+}
+.nav-dark > li > a {
+  display: block;
+  padding: 10px 50px 15px;
+  color: #fff;
+}
+.nav-dark > li > a:hover {
+  color: #fa6022;
+  text-decoration: none;
+}
+@media (max-width: 767px) {
+  .nav-dark > li {
+    float: none;
+  }
+  .nav-dark > li > a {
+    background: #eeeeee;
+    padding: 5px 20px;
+  }
+}
+.nav-dark > li.nav-active > a {
+  color: #fa6022;
+  font-weight: 700;
+}
 h2 {
   padding: 30px 10px 0;
   color: #fa6022;
@@ -2646,37 +2675,6 @@ h5 {
 }
 .torso {
   margin-bottom: 50px;
-}
-.block-logo {
-  display: block;
-  width: 150px;
-  height: 55px;
-  float: left;
-  margin: 15px 0 0;
-}
-@media (max-width: 767px) {
-  .block-logo {
-    float: none;
-    margin: 15px auto 10px;
-  }
-}
-.block-logo a {
-  position: relative;
-  display: block;
-  width: 150px;
-  height: 55px;
-}
-.footer .block-logo a {
-  background-image: url('/_themes/24hl/img/');
-  text-indent: -9999em;
-  background-size: 150px 55px;
-}
-.block-logo a .description {
-  font: 0/0 a;
-  color: transparent;
-  text-shadow: none;
-  background-color: transparent;
-  border: 0;
 }
 .home-hero {
   background: url('/_themes/24hl/img/orange_polygon.jpg') no-repeat center center fixed;
@@ -2753,7 +2751,20 @@ h5 {
   font-weight: 700;
   opacity: 1;
   margin: 0;
-  font-size: 15px;
+  font-size: 20px;
+}
+.boldnumbers a {
+  color: #fff;
+  text-decoration: none;
+}
+.homenav {
+  color: #fff;
+  font-weight: 100;
+  opacity: 1;
+  padding-top: 5px;
+  margin: 0;
+  font-size: 12px;
+  letter-spacing: 3px;
 }
 .row-fifths > div {
   width: 20%;

@@ -65,7 +65,7 @@ img {
   }
 
   a {
-    color:#fff;
+    color:#000;
   }
 }
 
@@ -113,6 +113,48 @@ img {
   }
 }
 
+.nav-dark {
+  margin: 0;
+
+
+  list-style:none;
+
+  > li {
+
+    float:left;
+
+    > a {
+      display:block;
+      padding:10px 50px 15px;
+      color:#fff;
+
+
+      &:hover {
+        color: @color-orange;
+        text-decoration: none;
+      }
+    }
+
+    @media (max-width: @screen-xs-max) {
+      float: none;
+
+      > a {
+        background: @gray-lighter;
+        padding: 5px 20px;
+      }
+    }
+
+    &.nav-active {
+      > a {
+        color:@color-orange;
+        font-weight:700;
+
+
+
+      }
+    }
+  }
+}
 
 h2 {
   padding:30px 10px 0;
@@ -141,41 +183,7 @@ h5 {
   margin-bottom:50px;
 }
 
-.block-logo {
-  @width: 150px;
-  @height: 55px;
 
-  display:block;
-  width: @width;
-  height: @height;
-  float:left;
-  margin:15px 0 0;
-
-  @media (max-width: @screen-xs-max) {
-    float: none;
-    margin:15px auto 10px;
-  }
-
-  a {
-    position: relative;
-    display:block;
-    width:@width;
-    height:@height;
-    .footer & {
-     background-image: url('@{imagePath}/');
-     text-indent: -9999em;
-     background-size: @width @height;
-
-   }
-    .description {
-      .text-hide();
-    }
-
-
-
-  }
-
-}
 
 .home-hero {
   background:url('@{imagePath}/orange_polygon.jpg') no-repeat center center fixed;
@@ -278,9 +286,22 @@ h5 {
   opacity: 1;
 
   margin:0;
-  font-size:15px;
+  font-size:20px;
+  a {
+    color:#fff;
+    text-decoration: none;
+  }
 }
+.homenav {
+  color: #fff;
+  font-weight: 100;
+  opacity: 1;
+  padding-top: 5px;
 
+  margin:0;
+  font-size:12px;
+  letter-spacing: 3px;
+}
 .row-fifths > div {
   width:20%;
 
