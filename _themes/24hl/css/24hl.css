@@ -2900,6 +2900,9 @@ h5 {
   font-size: 12px;
   text-align: left;
 }
+.journal-container {
+  background-color: #000;
+}
 .column-item-dark {
   display: flex;
   padding: 20px 10px 20px;
@@ -2935,32 +2938,6 @@ h5 {
   font-size: 46px;
   letter-spacing: 0px;
 }
-.list-staff-name {
-  margin: 0 0 5px;
-  background: #019fe3;
-  padding: 20px 10px 5px;
-  color: #ffffff;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-}
-.list-staff-about {
-  margin: 0 0 0px;
-  background: #019fe3;
-  padding: 20px 10px 5px;
-  color: #ffffff;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-}
-.list-page-home {
-  margin: 0;
-  margin-bottom: 20px;
-  display: block;
-  background: #019fe3;
-  padding: 20px 0px 0px;
-  color: #ffffff;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-}
 .home-page-header {
   margin: 0;
   display: block;
@@ -2969,52 +2946,4 @@ h5 {
   color: #ffffff;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-}
-.list-staff-content {
-  padding: 0 10px;
-}
-.list-staff-title {
-  font-weight: bold;
-}
-.list-page {
-  margin: 0px;
-  display: block;
-  margin-bottom: 20px;
-  background: #019fe3;
-  padding: 20px 0px 0px;
-  color: #ffffff;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-}
-.list-page:hover {
-  text-decoration: none;
-  background: #017bb0;
-}
-.list-page-header {
-  margin: 0px;
-  display: block;
-  color: #ffffff;
-  padding: 0px 0px 0px 10px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  margin-bottom: 5px;
-}
-.list-job {
-  padding-bottom: 10px;
-  margin-bottom: 30px;
-  border-bottom: solid 1px #eeeeee;
-}
-.list-files .list-file {
-  display: block;
-  padding: 10px 20px;
-  color: #ffffff;
-}
-.list-files .list-file + .list-file {
-  margin-top: 1px;
-}
-.list-files .list-file:nth-child(odd) {
-  background: #75b72a;
-}
-.list-files .list-file:nth-child(even) {
-  background: #97d057;
 }

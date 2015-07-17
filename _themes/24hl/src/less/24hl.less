@@ -479,6 +479,10 @@ h5 {
 
 }
 
+.journal-container {
+  background-color: #000;
+}
+
 .column-item-dark {
   display: flex;
   padding:20px 10px 20px;
@@ -525,38 +529,7 @@ h5 {
   }
 
 }
-.list-staff {}
-.list-staff-member {}
 
-.list-staff-name {
-  margin:0 0 5px;
-  background: @color-blue;
-  padding:20px 10px 5px;
-
-  color: @white;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-}
-
-.list-staff-about {
-  margin:0 0 0px;
-  background: @color-blue;
-  padding:20px 10px 5px;
-
-  color: @white;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-}
-.list-page-home {
-  margin: 0;
-  margin-bottom: 20px;
-  display: block;
-  background: #019fe3;
-  padding: 20px 0px 0px;
-  color: #ffffff;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-}
 .home-page-header {
   margin: 0;
   display: block;
@@ -566,68 +539,4 @@ h5 {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 
-}
-
-.list-staff-content {
-  padding: 0 10px;
-}
-
-.list-staff-title {
-  font-weight: bold;
-}
-
-.list-pages {}
-
-.list-page {
-  margin: 0px;
-  display: block;
-  margin-bottom: 20px;
-  background: @color-blue;
-  padding:20px 0px 0px;
-  color: @white;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-
-  &:hover {
-    text-decoration: none;
-    background: darken(@color-blue, 10%);
-  }
-}
-.list-page-header {
-    margin: 0px;
-    display:block;
-    color: @white;
-    padding: 0px 0px 0px 10px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    margin-bottom: 5px;
-}
-
-.list-job {
-  padding-bottom:10px;
-  margin-bottom:30px;
-  border-bottom:solid 1px @gray-lighter;
-}
-
-
-.list-files {
-
-  .list-file {
-    display:block;
-    padding: 10px 20px;
-
-    color: @white;
-
-    + .list-file {
-      margin-top:1px;
-    }
-
-    &:nth-child(odd) {
-      background: @color-green;
-    }
-
-    &:nth-child(even) {
-      background:@color-green-secondary;
-    }
-  }
 }

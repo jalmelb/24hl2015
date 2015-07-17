@@ -1,0 +1,23 @@
+<div class="contact-background">
+<div class="row">
+  <div class="col-md-3">
+  	<div class="column-page-header">
+  		<h2 class="page-header">24HOUR JOURNAL</h2>
+  	</div>
+  </div>
+<div class="row">
+  <div class="col-md-offset-3 col-md-6">
+    <div class="journal-container">
+
+    <h3>{{ title }}</h3>
+    {{ content }}
+
+    {{ entries:listing folder="blog" limit="5" }}
+    <h3><a href="{{ url }}">{{ title }}</a></h3>
+    <h4>{{ date }}</h4>
+    {{ content }}
+    {{ /entries:listing }}
+</div>
+  </div>
+</div>
+</div>
