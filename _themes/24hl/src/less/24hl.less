@@ -96,7 +96,7 @@ img {
 
       > a {
         background: @gray-lighter;
-        border-radius: 0;
+
         padding: 5px 20px;
       }
     }
@@ -116,10 +116,7 @@ img {
 
 h2 {
   padding:30px 10px 0;
-  border-radius: 7px;
   color: @color-orange;
-
-
 
 }
 h4 {
@@ -219,6 +216,9 @@ h5 {
   }
 }
 }
+
+
+
 
 .contact-background {
   background:url('@{imagePath}/black_polygon.jpg') no-repeat center center fixed;
@@ -479,8 +479,20 @@ h5 {
 
 }
 
+.journal-layout {
+  padding: 60px 10px 10px 10px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+
+
+}
+
 .journal-container {
   background-color: #000;
+  padding: 10px 10px 10px 10px;
+
+
 }
 
 .column-item-dark {
@@ -530,40 +542,7 @@ h5 {
 
 }
 
-.home-page-header {
-  margin: 0;
-  display: block;
-  background: #019fe3;
-  padding: 20px 10px 5px;
-  color: #ffffff;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
 
-}
-
-/* ---- stats.js ---- */
-
-
-
-.js-count-particles{
-  font-size: 1.1em;
-}
-
-#stats,
-.count-particles{
-  -webkit-user-select: none;
-  margin-top: 5px;
-  margin-left: 5px;
-}
-
-#stats{
-  border-radius: 3px 3px 0 0;
-  overflow: hidden;
-}
-
-.count-particles{
-  border-radius: 0 0 3px 3px;
-}
 
 
 /* ---- particles.js container ---- */
@@ -574,6 +553,6 @@ h5 {
   background-color: #0f0203;
   background-image: url('');
   background-size: cover;
-  background-position: 50% 50%;
   background-repeat: no-repeat;
+
 }
