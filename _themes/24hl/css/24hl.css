@@ -2852,7 +2852,7 @@ h5 {
   display: -webkit-flex;
   display: flex;
   -webkit-flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
 }
 .flex-4-column p {
   margin: 0;
@@ -2886,7 +2886,7 @@ h5 {
   display: -webkit-flex;
   display: flex;
   -webkit-flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
 }
 .flex-2-column p {
   margin: 0;
