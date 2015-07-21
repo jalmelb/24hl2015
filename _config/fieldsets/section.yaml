@@ -1,0 +1,13 @@
+title: Section Page
+
+fields:
+  upload:
+    type: file
+    destination: assets/img/
+    allowed: ['jpg']
+
+  content:
+    display: Page Content
+    required: false
+    default:
+    type: markitup

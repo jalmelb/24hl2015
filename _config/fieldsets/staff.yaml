@@ -1,0 +1,34 @@
+title: Staff
+_template:
+  default: staff
+
+fields:
+  threeCol:
+    display: Three coloumn layout
+    type: checkbox
+
+
+  staff:
+    display: Staff
+    type: grid
+    starting_rows: 1
+    min_rows: 1
+    fields:
+      name:
+        display: Name
+        type: text
+        width: 25%
+      title:
+        display: Title
+        type: text
+        width: 25%
+      description:
+        display: Description
+        type: text
+        width: 25%
+      filePath:
+        display: File
+        width: 50%
+        type: file
+        destination: assets/img/staff
+        allowed: ['jpeg,jpg']

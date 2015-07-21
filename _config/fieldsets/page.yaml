@@ -16,3 +16,24 @@ fields:
     default:
     type: markitup
 
+
+  pages:
+    display: Pages
+    type: grid
+    starting_rows: 1
+    min_rows: 1
+    fields:
+      title:
+        display: Title
+        type: text
+        width: 25%
+      href:
+        display: Link
+        type: text
+        width: 25%
+      filePath:
+        display: File
+        width: 50%
+        type: file
+        destination: assets/img/page
+        allowed: ['jpeg,jpg']

@@ -1,0 +1,70 @@
+
+# Location (from rot) to save form submissions
+submission_save_extension: md
+submission_save_path: _forms/contact/
+
+# Fields allowed to be submitted in the form, automatically
+# purging anything and everything else
+allowed:
+  - firstname
+  - surname
+  - email
+  - postcode
+  - phone
+  - message
+
+# You are not required to require fields, but once you do, any missing
+# from the POST will squash this submission and send a list of
+# missing fields to your {{ raven:errors }} tagpair
+required:
+  - firstname
+  - email
+  - postcode
+  - message
+
+# Apply validation rules to specific fields. Refer to documentation
+# for a full list of available rules and their format
+validate:
+  firstname: alpha
+  email: email
+  message: alpha
+
+# Error messages can be mapped to your fields and passed to the
+# template upon failure. They will be available here:
+#
+# {{ raven:error }}
+#     {{ invalid }}
+#         {{ field }} : {{ message }}
+#     {{ /invalid }}
+# {{ /raven:error }}
+#
+messages:
+  firstname: "Firstname field cannot be blank"
+  email: "Email field cannot be blank"
+  message: "Message field cannot be blank"
+
+# Configure notification email
+email:
+  to: enquiries@thinkchildcare.com.au
+  from: webmaster@thinkchildcare.com.au
+  subject: Someone has contacted you at thinkchildcare.com.au
+  automagic: true
+  # html_template: html_email
+  # text_template: text_email
+
+datestamp_format: "dd/mm/YY"
+
+control_panel:
+  fields:
+    - firstname
+    - surname
+    - email
+    - postcode
+    - phone
+    - message
+
+  metrics:
+    -
+      type: count
+      field: email
+      label: Total contacts

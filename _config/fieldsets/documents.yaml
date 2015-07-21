@@ -1,0 +1,56 @@
+title: Files
+
+fields:
+  content:
+    display: Page Content
+    required: false
+    default:
+    type: markitup
+
+  files:
+    display: Files
+    type: grid
+    starting_rows: 1
+    min_rows: 1
+    fields:
+      title:
+        display: Title
+        type: text
+        width: 25%
+      description:
+        display: Date
+        type: text
+        width: 25%
+      filePath:
+        display: File
+        width: 50%
+        type: file
+        destination: assets/pdf/
+        allowed: ['pdf']
+
+  factsheets:
+    display: Fact sheets
+    type: grid
+    starting_rows: 1
+    min_rows: 1
+    fields:
+      title:
+        display: Title
+        type: text
+        width: 25%
+      description:
+        display: Description
+        type: text
+        width: 25%
+      image:
+        display: Image
+        width: 25%
+        type: file
+        destination: assets/img/
+        allowed: ['jpg']
+      filePath:
+        display: File
+        width: 25%
+        type: file
+        destination: assets/pdf/
+        allowed: ['pdf']

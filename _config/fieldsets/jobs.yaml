@@ -1,0 +1,23 @@
+title: Staff
+_template:
+  default: careers
+
+fields:
+  threeCol:
+    display: Three coloumn layout
+    type: checkbox
+
+  jobs:
+    display: Jobs
+    type: grid
+    starting_rows: 1
+    min_rows: 1
+    fields:
+      title:
+        display: Title
+        type: text
+        width: 50%
+      description:
+        display: Description
+        type: markitup
+        width: 50%
