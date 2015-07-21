@@ -118,6 +118,7 @@ img {
   padding-top: 25px;
   width: 50%;
   margin: 0 auto;
+  padding-bottom: 50px;
 
 
   list-style:none;
@@ -160,7 +161,7 @@ img {
 }
 
 h2 {
-  padding:30px 10px 0;
+  padding:30px 10px;
   color: @color-orange;
 
 }
@@ -256,12 +257,15 @@ h5 {
 }
 }
 .page-header {
-  position:relative;
+  display: flex;
+  padding: 20px 10px 20px;
   color: @color-orange;
   font-weight: 700;
-  margin:0;
+  width: 350px;
   font-size:16px;
   letter-spacing: 4px;
+  text-align: left;
+
 }
 
 .home-number {
@@ -395,7 +399,7 @@ h5 {
 
   -webkit-flex-flow: row wrap;
   justify-content: flex-start;
-
+  border: 1px solid red;
 
   p {
     margin:0;
@@ -419,7 +423,7 @@ h5 {
 
   -webkit-flex-direction: row;
   justify-content: center;
-
+  border: 1px solid red;
 
   p {
     margin:0;
@@ -443,7 +447,7 @@ h5 {
 
   -webkit-flex-direction: row;
   justify-content: flex-start;
-
+  border: 1px solid red;
 
   p {
     margin:0;
@@ -467,7 +471,7 @@ h5 {
 
   -webkit-flex-direction: row;
   justify-content: center;
-
+  border: 1px solid red;
 
   p {
 
@@ -485,7 +489,7 @@ h5 {
   font-weight: 100;
   font-size: 12px;
   text-align: left;
-
+  border: 1px solid red;
 }
 
 .column-image {
@@ -497,7 +501,7 @@ h5 {
   font-weight: 100;
   font-size: 12px;
   text-align: left;
-
+  border: 1px solid red;
 }
 
 // need to fix this shit
@@ -566,14 +570,15 @@ h5 {
   }
 
 .column-page-header {
-  position:relative;
+  display: flex;
+  padding: 20px 10px 20px;
   color: @color-orange;
   font-weight: 700;
   margin-top: 40px;
   margin-bottom: 20px;
   font-size:46px;
   letter-spacing: 0px;
-
+  width: auto;
 
   }
 

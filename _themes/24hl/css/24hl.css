@@ -2632,6 +2632,7 @@ img {
   padding-top: 25px;
   width: 50%;
   margin: 0 auto;
+  padding-bottom: 50px;
   list-style: none;
 }
 .nav-dark > li {
@@ -2660,7 +2661,7 @@ img {
   font-weight: 700;
 }
 h2 {
-  padding: 30px 10px 0;
+  padding: 30px 10px;
   color: #fa6022;
 }
 h4 {
@@ -2729,12 +2730,14 @@ h5 {
   line-height: 50px;
 }
 .page-header {
-  position: relative;
+  display: flex;
+  padding: 20px 10px 20px;
   color: #fa6022;
   font-weight: 700;
-  margin: 0;
+  width: 350px;
   font-size: 16px;
   letter-spacing: 4px;
+  text-align: left;
 }
 .home-number {
   color: #fff;
@@ -2836,6 +2839,7 @@ h5 {
   display: flex;
   -webkit-flex-flow: row wrap;
   justify-content: flex-start;
+  border: 1px solid red;
 }
 .flex-container p {
   margin: 0;
@@ -2853,6 +2857,7 @@ h5 {
   display: flex;
   -webkit-flex-direction: row;
   justify-content: center;
+  border: 1px solid red;
 }
 .flex-4-column p {
   margin: 0;
@@ -2870,6 +2875,7 @@ h5 {
   display: flex;
   -webkit-flex-direction: row;
   justify-content: flex-start;
+  border: 1px solid red;
 }
 .flex-wrap p {
   margin: 0;
@@ -2887,6 +2893,7 @@ h5 {
   display: flex;
   -webkit-flex-direction: row;
   justify-content: center;
+  border: 1px solid red;
 }
 .flex-2-column p {
   margin: 0;
@@ -2900,6 +2907,7 @@ h5 {
   font-weight: 100;
   font-size: 12px;
   text-align: left;
+  border: 1px solid red;
 }
 .column-image {
   display: flex;
@@ -2910,6 +2918,7 @@ h5 {
   font-weight: 100;
   font-size: 12px;
   text-align: left;
+  border: 1px solid red;
 }
 .journal-nav {
   padding: 25px 5px 5px 5px;
@@ -2959,13 +2968,15 @@ h5 {
   margin: 0;
 }
 .flex-page-header .column-page-header {
-  position: relative;
+  display: flex;
+  padding: 20px 10px 20px;
   color: #fa6022;
   font-weight: 700;
   margin-top: 40px;
   margin-bottom: 20px;
   font-size: 46px;
   letter-spacing: 0px;
+  width: auto;
 }
 /* ---- particles.js container ---- */
 #particles-js {
