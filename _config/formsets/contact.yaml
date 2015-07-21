@@ -45,9 +45,9 @@ messages:
 
 # Configure notification email
 email:
-  to: enquiries@thinkchildcare.com.au
-  from: webmaster@thinkchildcare.com.au
-  subject: Someone has contacted you at thinkchildcare.com.au
+  to: info@24hourlime.com.au
+  from: webmaster@24hourlime.com.au
+  subject: Someone has contacted you at 24hourlime.com.au
   automagic: true
   # html_template: html_email
   # text_template: text_email
