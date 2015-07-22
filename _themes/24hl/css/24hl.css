@@ -2684,6 +2684,7 @@ h5 {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  overflow: hidden;
 }
 .home-hero .container {
   position: relative;
