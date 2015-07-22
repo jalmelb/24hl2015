@@ -2807,6 +2807,12 @@ h5 {
   padding: 10px 30px;
   margin-top: 20px;
 }
+.page-seperator-dark {
+  border-bottom: 1px solid;
+  color: #fff;
+  padding: 10px 30px;
+  margin-top: 20px;
+}
 .contact-details {
   color: #808285;
 }
