@@ -2812,6 +2812,7 @@ h5 {
   color: #fff;
   padding: 10px 30px;
   margin-top: 20px;
+  margin-bottom: 20px;
   opacity: 0.3;
 }
 .contact-details {
@@ -2941,7 +2942,6 @@ h5 {
   left: 0px;
 }
 .journal-container {
-  background-color: #171616;
   padding: 10px 10px 10px 10px;
   color: #fff;
 }
