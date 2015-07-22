@@ -1,5 +1,5 @@
 ---
 title: WORK
-_template: work
+_template: workfullpage
 _layout: work
 ---
