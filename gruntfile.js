@@ -43,14 +43,14 @@ module.exports = function(grunt) {
       }
     },
 
-    imagemin: {                          // Task
-      prod: {                         // Another target
+    imagemin: { // Task
+      prod: { // Another target
         files: [{
           expand: true,
-          flat: true,                  // Enable dynamic expansion
-          cwd: '_themes/24hl/src/img/',                   // Src matches are relative to this path
+          flat: true, // Enable dynamic expansion
+          cwd: '_themes/24hl/src/img/', // Src matches are relative to this path
           src: ['**/*'],   // Actual patterns to match
-          dest: '_themes/24hl/img/'                  // Destination path prefix
+          dest: '_themes/24hl/img/' // Destination path prefix
         }]
       }
     },

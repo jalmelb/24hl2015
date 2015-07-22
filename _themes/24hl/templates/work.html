@@ -1,84 +1,84 @@
 <!-- top blurb and header bit -->
-			<ul class="flex-4-column">
-				<li class="column-page-header">
-					<h2 class="column-item">CLIENT WORK</h2>
-				</li>
-				<li class="column-page-header">
-					<h2 class="column-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fermentum lobortis porta. Mauris faucibus hendrerit pulvinar. Pellentesque sagittis, enim eu ornare dapibus, ligula nibh fermentum mauris, nec interdum lorem ante vel nunc.</h2>
-				</li>
-				<li class="column-page-header">
-					<h2 class="column-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fermentum lobortis porta. Mauris faucibus hendrerit pulvinar. Pellentesque sagittis, enim eu ornare dapibus, ligula nibh fermentum mauris, nec interdum lorem ante vel nunc.</h2>
-				</li>
-				<li class="column-page-header">
-					<h2 class="column-item"></h2>
-					<p></p>
-				</li>
-			</ul>
+<ul class="flex-column flex-4-column">
+	<li class="column-item">
+		<h2>CLIENT WORK</h2>
+	</li>
+	<li class="column-item">
+		<h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fermentum lobortis porta. Mauris faucibus hendrerit pulvinar. Pellentesque sagittis, enim eu ornare dapibus, ligula nibh fermentum mauris, nec interdum lorem ante vel nunc.</h2>
+	</li>
+	<li class="column-item">
+		<h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fermentum lobortis porta. Mauris faucibus hendrerit pulvinar. Pellentesque sagittis, enim eu ornare dapibus, ligula nibh fermentum mauris, nec interdum lorem ante vel nunc.</h2>
+	</li>
+	<li class="column-item"></li>
+</ul>
 
 <!-- content bit -->
-<ul class="flex-wrap">
-	<li class="column-page-header">
-		<p>
+<ul class="flex-column flex-4-column">
+	<li class="column-item column-no-padding">
 		<img src="/assets/img/about-1.jpg" alt="domoto logo" height="220">
-		<br>This is some text
+		<p>
+			<br>
+			This is some text
 		</p>
 	</li>
-	<li class="column-page-header">
-		<p>
+	<li class="column-item column-no-padding">
 		<img src="/assets/img/about-1.jpg" alt="domoto logo" height="220">
-		<br>This is some text
+		<p>
+			<br>
+			This is some text
 		</p>
 	</li>
-		<li class="column-page-header">
-		<p>
+	<li class="column-item column-no-padding">
 		<img src="/assets/img/about-1.jpg" alt="domoto logo" height="220">
-		<br>This is some text
+		<p>
+			<br>This is some text
 		</p>
 	</li>
-		<li class="column-page-header">
-		<p>
+	<li class="column-item column-no-padding">
 		<img src="/assets/img/about-1.jpg" alt="domoto logo" height="220">
-		<br>This is some text
+		<p>
+			<br>This is some text
 		</p>
 	</li>
-		<li class="column-page-header">
+</ul>
+
+<ul class="flex-column flex-4-column">
+	<li class="column-item column-no-padding">
 		<p>
-		<img src="/assets/img/about-1.jpg" alt="domoto logo" height="220">
-		<br>This is some text
+			<img src="/assets/img/about-1.jpg" alt="domoto logo" height="220">
+			<br>This is some text
 		</p>
 	</li>
-		<li class="column-page-header">
+	<li class="column-item column-no-padding">
 		<p>
-		<img src="/assets/img/about-1.jpg" alt="domoto logo" height="220">
-		<br>This is some text
+			<img src="/assets/img/about-1.jpg" alt="domoto logo" height="220">
+			<br>This is some text
 		</p>
 	</li>
-	<li class="column-page-header">
+	<li class="column-item column-no-padding">
 		<p>
 			<img src="/assets/img/about-1.jpg" alt="domoto logo" height="220">
 			<br>This is some text
 			</p>
 	</li>
-		<li class="column-page-header">
-			<p>
-				<img src="/assets/img/about-1.jpg" alt="domoto logo" height="220">
-				<br>This is some text
-			</p>
+	<li class="column-item column-no-padding">
+		<p>
+			<img src="/assets/img/about-1.jpg" alt="domoto logo" height="220">
+			<br>This is some text
+		</p>
 	</li>
-
 </ul>
 
-
-          <div class="list-files">
-            {{ files }}
-              <a class="list-file" href="{{ filePath }}">
-                {{ title }} {{ description }}
-              </a>
-            {{ /files }}
-          </div>
-
-        </div>
-      </div>
-    </div>
-
-</main>
+<div class="flex-column flex-4-column">
+  {{ files }}
+		<li class="column-item column-no-padding">
+			<p>
+				<img src="/assets/img/about-1.jpg" alt="domoto logo" height="220">
+				{{ title }}
+			</p>
+		</li>
+    <a class="list-file" href="{{ filePath }}">
+      {{ title }} {{ description }}
+    </a>
+  {{ /files }}
+</div>

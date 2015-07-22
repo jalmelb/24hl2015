@@ -2629,16 +2629,16 @@ img {
 }
 .nav-dark {
   padding-top: 25px;
-  width: 50%;
   margin: 0 auto;
   padding-bottom: 50px;
   list-style: none;
+  text-align: center;
 }
 .nav-dark > li {
-  float: left;
+  display: inline-block;
 }
 .nav-dark > li > a {
-  display: block;
+  display: inline-block;
   padding: 10px 50px 15px;
   color: #fff;
 }
@@ -2789,6 +2789,13 @@ h5 {
 .footer a {
   color: #ffffff;
 }
+.page-Journal .footer {
+  position: fixed;
+  overflow: hidden;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
 .footer-overview {
   text-align: right;
 }
@@ -2888,7 +2895,6 @@ h5 {
   margin: 0;
 }
 .column-item {
-  display: flex;
   padding: 20px 10px 20px;
   line-height: 12px;
   color: #000;
@@ -2896,6 +2902,12 @@ h5 {
   font-size: 12px;
   text-align: left;
   border: 1px solid red;
+}
+.column-item.column-no-padding {
+  padding: 0;
+}
+.column-item.column-no-padding img {
+  width: 100% !important;
 }
 .flex-4-column .column-item {
   width: 25%;
@@ -2903,29 +2915,16 @@ h5 {
 .flex-2-column .column-item {
   width: 50%;
 }
-.column-image {
-  display: flex;
-  padding: 20px 10px 20px;
-  width: 350px;
-  line-height: 12px;
-  color: #000;
-  font-weight: 100;
-  font-size: 12px;
-  text-align: left;
-  border: 1px solid red;
+.jarrods-face {
+  margin-top: 20px;
 }
 .journal-nav {
   padding: 25px 5px 5px 5px;
-  position: absolute;
   top: 0px;
-  width: 100%;
   margin: 0 auto;
 }
 .journal-layout {
   padding: 90px 10px 10px 10px;
-  position: absolute;
-  top: 120px;
-  left: 0px;
 }
 .journal-container {
   padding: 10px 10px 10px 10px;
@@ -2971,9 +2970,12 @@ h5 {
 }
 /* ---- particles.js container ---- */
 #particles-js {
-  position: absolute;
-  width: 100%;
-  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
   background-color: #0f0203;
   background-image: url('');
   background-size: cover;
