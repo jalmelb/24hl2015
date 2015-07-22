@@ -591,7 +591,6 @@ a.bg-danger:hover {
 .page-header {
   padding-bottom: 9px;
   margin: 40px 0 20px;
-  border-bottom: 1px solid #eeeeee;
 }
 ul,
 ol {
@@ -2734,7 +2733,6 @@ h5 {
   padding: 20px 10px 20px;
   color: #fa6022;
   font-weight: 700;
-  width: 350px;
   font-size: 16px;
   letter-spacing: 4px;
   text-align: left;
@@ -2852,24 +2850,6 @@ h5 {
 .flex-container p {
   margin: 0;
 }
-.flex-4-column {
-  padding: 0;
-  margin-left: 40px;
-  margin-right: 40px;
-  list-style: none;
-  flex-flow: row nowrap;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-direction: row;
-  justify-content: center;
-  border: 1px solid red;
-}
-.flex-4-column p {
-  margin: 0;
-}
 .flex-wrap {
   padding: 0;
   margin-left: 40px;
@@ -2888,7 +2868,7 @@ h5 {
 .flex-wrap p {
   margin: 0;
 }
-.flex-2-column {
+.flex-column {
   padding: 0;
   margin-left: 40px;
   margin-right: 40px;
@@ -2903,19 +2883,24 @@ h5 {
   justify-content: center;
   border: 1px solid red;
 }
-.flex-2-column p {
+.flex-column p {
   margin: 0;
 }
 .column-item {
   display: flex;
   padding: 20px 10px 20px;
-  width: 350px;
   line-height: 12px;
   color: #000;
   font-weight: 100;
   font-size: 12px;
   text-align: left;
   border: 1px solid red;
+}
+.flex-4-column .column-item {
+  width: 25%;
+}
+.flex-2-column .column-item {
+  width: 50%;
 }
 .column-image {
   display: flex;
@@ -2948,29 +2933,18 @@ h5 {
 .journal-container a {
   color: #fff;
 }
-.column-item-dark {
-  display: flex;
-  padding: 20px 10px 20px;
-  width: 350px;
+.column-dark {
   line-height: 12px;
   color: #ffffff;
   font-weight: 100;
   font-size: 12px;
   text-align: left;
 }
-.column-item-dark-form {
-  display: flex;
-  padding: 20px 0px 0px;
-  width: 350px;
-  line-height: 12px;
-  color: #ffffff;
-  font-weight: 100;
-  font-size: 12px;
+.column-dark .form-horizontal {
+  width: 100%;
 }
 .flex-page-header {
   padding: 0;
-  margin-left: 40px;
-  margin-right: 40px;
   list-style: none;
   flex-flow: row nowrap;
   display: -webkit-box;
