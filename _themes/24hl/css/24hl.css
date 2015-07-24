@@ -2738,6 +2738,16 @@ h5 {
   letter-spacing: 4px;
   text-align: left;
 }
+.page-header-2 {
+  padding: 0px 10px 20px;
+  line-height: 12px;
+  color: #fa6022;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 4px;
+  text-align: left;
+  top: 0;
+}
 .home-number {
   color: #fff;
   font-weight: 700;
