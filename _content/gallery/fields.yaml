@@ -1,2 +1,25 @@
-type: date
-_fieldset: gallery
+type: number
+
+fields:
+  _template: 
+    display: Template
+    type: templates
+
+  gallery:
+    display: Image Gallery
+    type: grid
+    starting_rows: 1
+    min_rows: 1
+    fields:
+      title:
+        display: Image Title
+        type: text
+        width: 50%
+      img:
+        display: Image
+        type: file
+        allowed: [png, gif, jpg, jpeg]
+        destination: assets/img/gallery
+
+  content:
+    type: hidden

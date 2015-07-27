@@ -17,16 +17,13 @@
 
 
 <ul class="flex-column flex-4-column">
-
-	{{ gallery }}
 	<li class="column-item column-no-padding">
-		{{ entries:listing folder="gallery" limit="5" }}
-		<a href="{{ url }}">{{ title }}</a>
+		{{ entries:listing folder="work" limit="4" }}
+			<a href="{{ url }}">
         <img src="{{ transform src="{{ img }}" width="350" height="220" }}">
-        <div>{{ title }}</div>
-      </a>
-	</li>
+				{{ title }}
+				{{ description|markdown }}
+			</a>
+  </li>
 		{{ /entries:listing }}
-	{{ /gallery }}
-	
 </ul>

@@ -1,6 +1,6 @@
 fields:
   gallery:
-    display: Image Gallery
+    display: Add New Work
     type: grid
     starting_rows: 1
     min_rows: 1
@@ -13,7 +13,7 @@ fields:
         display: Image
         type: file
         allowed: [png, gif, jpg, jpeg]
-        destination: assets/img/gallery 
-
+        destination: assets/img/gallery
+      
   content:
     type: hidden
