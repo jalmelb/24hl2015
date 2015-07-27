@@ -13,15 +13,20 @@
 </ul>
 
 <!-- content bit -->
-<div class="flex-wrap flex-4-column">
-	{{ entries:listing folder="assets/img/gallery" }}
-  	{{ get_files in="assets/img/gallery" limit="10"}}
-			<li class="column-item column-no-padding">
-				<a href="{{ url }}">
-					<img src="{{ transform src='{{ file }}' width='350' height='220' action='smart' }}">
-	  			{{ title }}
-				</a>
-			</li>
-		{{ /get_files }}
-	{{ /entries:listing }}
-</div>
+
+
+
+<ul class="flex-column flex-4-column">
+
+	{{ gallery }}
+	<li class="column-item column-no-padding">
+		{{ entries:listing folder="gallery" limit="5" }}
+		<a href="{{ url }}">{{ title }}</a>
+        <img src="{{ transform src="{{ img }}" width="350" height="220" }}">
+        <div>{{ title }}</div>
+      </a>
+	</li>
+		{{ /entries:listing }}
+	{{ /gallery }}
+	
+</ul>

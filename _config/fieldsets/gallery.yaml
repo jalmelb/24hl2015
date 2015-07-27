@@ -1,11 +1,4 @@
-_template:
-  default: work
-
 fields:
-  _template: # note the prefixed _underscore
-    display: Template
-    type: templates
-
   gallery:
     display: Image Gallery
     type: grid
@@ -20,7 +13,7 @@ fields:
         display: Image
         type: file
         allowed: [png, gif, jpg, jpeg]
-        destination: assets/img/gallery # make sure your folder is writeable
+        destination: assets/img/gallery 
 
   content:
     type: hidden
