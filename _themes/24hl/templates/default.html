@@ -129,17 +129,21 @@ Vivamus pulvinar semper tempus. Phasellus tincidunt sit amet elit nec finibus. M
 </ul>
 
 <div class="contact-background">
-	<nav class="block-navigation">
-		<ul class="nav nav-dark" role="navigation">
-			{{ nav from="/" }}
-				<li {{ if is_current || is_parent }} class="nav-active"{{ endif }}>
-					<a href="{{ url }}">
-						{{ title }}
-					</a>
+	<div class="journal-nav">
+	  <nav class="block-navigation">
+	    <ul class="nav nav-dark" role="navigation">
+	      <li><a href="/Work">WORK</a>
+				<li><a data-scroll href="#About">ABOUT</a>
+				<li><a href="/Journal">JOURNAL</a>
+				<li><a data-scroll href="#Contact">CONTACT</a>
 				</li>
-			{{ /nav }}
-		</ul>
-	</nav>
+	    </ul>
+	  </nav>
+	</div>
+
+
+
+
 
 	<ul class="flex-column flex-2-column">
 		<li class="column-item">
