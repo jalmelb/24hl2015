@@ -1,40 +1,24 @@
-<div class="row">
-	<div class="eight columns">
-		<div class="article">
-			{{ theme:partial src="breadcrumbs" }}
-			<h1>{{ title|smartypants|widont }}</h1>
+<!-- top blurb and header bit -->
+<ul class="flex-column flex-4-column">
+	<li class="column-item">
+		<p class="page-header-2">CLIENT WORK</p>
+	</li>
+	<li class="column-item">
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fermentum lobortis porta. Mauris faucibus hendrerit pulvinar. Pellentesque sagittis, enim eu ornare dapibus, ligula nibh fermentum mauris, nec interdum lorem ante vel nunc.</p>
+	</li>
+	<li class="column-item">
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fermentum lobortis porta. Mauris faucibus hendrerit pulvinar. Pellentesque sagittis, enim eu ornare dapibus, ligula nibh fermentum mauris, nec interdum lorem ante vel nunc.</p>
+	</li>
+	<li class="column-item"></li>
+</ul>
 
-			{{ content|widont }}
-
-
-			<div class="gallery">
-				{{ gallery limit="2" }}
-					{{ if first }}<div class="row">{{ endif }}
-						<div class="half column">
-							<img src="{{ transform src="{photo}" width="400" height="400" action="smart" }}" alt="{{ caption }}">
-						</div>
-					{{ if last }}</div>{{ endif }}
-				{{ /gallery }}
-				
-				{{ gallery limit="3" offset="2" }}
-					{{ if first }}<div class="row">{{ endif }}
-						<div class="one-third column">
-							<img src="{{ transform src="{photo}" width="400" height="400" action="smart" }}" alt="{{ caption }}">
-						</div>
-					{{ if last }}</div>{{ endif }}
-				{{ /gallery }}
-				
-				{{ gallery limit="4" offset="5" }}
-					{{ if first }}<div class="row">{{ endif }}
-						<div class="one-fourth column">
-							<img src="{{ transform src="{photo}" width="400" height="400" action="smart" }}" alt="{{ caption }}">
-						</div>
-					{{ if last }}</div>{{ endif }}
-				{{ /gallery }}
-			</div>
-		</div>
-	</div>
-	<div class="four columns sidebar" role="complementary">
-		{{ theme:partial src="common-sidebar" }}
-	</div>
-</div>
+<!-- content bit -->
+<ul class="flex-column flex-4-column">
+	{{ gallery }}
+	<li class="column-item column-no-padding">
+		<a href="{{ img }}">
+        <img src="{{ transform src="{{ img }}" width="350" height="220" }}">
+        <div>{{ title }}</div>
+      </a>
+	</li>
+</ul>
