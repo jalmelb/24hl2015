@@ -2732,7 +2732,7 @@ h5 {
 }
 .page-header {
   display: flex;
-  padding: 20px 10px 20px;
+  padding: 20px 10px 0px;
   color: #fa6022;
   font-weight: 700;
   font-size: 16px;
@@ -2740,7 +2740,7 @@ h5 {
   text-align: left;
 }
 .page-header-2 {
-  padding: 0px 10px 20px;
+  padding: 0px 10px 0px;
   line-height: 12px;
   color: #fa6022;
   font-weight: 700;
@@ -2826,10 +2826,9 @@ h5 {
 .page-seperator-dark {
   border-bottom: 1px solid;
   color: #fff;
-  padding: 10px 30px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  padding: 0px 30px 30px;
   opacity: 0.3;
+  width: 100%;
 }
 .contact-details {
   color: #808285;
@@ -2890,7 +2889,7 @@ h5 {
   padding: 0;
   margin-left: 40px;
   margin-right: 40px;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
   list-style: none;
   flex-flow: row nowrap;
   display: -webkit-box;
@@ -2926,6 +2925,9 @@ h5 {
 .flex-2-column .column-item {
   width: 50%;
 }
+.flex-1-column .column-item {
+  width: 100%;
+}
 .jarrods-face {
   margin-top: 20px;
 }
@@ -2935,7 +2937,7 @@ h5 {
   margin: 0 auto;
 }
 .journal-layout {
-  padding: 90px 10px 10px 10px;
+  padding: 0px 10px 10px 10px;
 }
 .journal-container {
   padding: 10px 10px 10px 10px;
