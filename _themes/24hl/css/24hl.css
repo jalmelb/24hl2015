@@ -2928,6 +2928,9 @@ h5 {
 .flex-1-column .column-item {
   width: 100%;
 }
+.flexgrow .column-item {
+  flex-grow: 2;
+}
 .jarrods-face {
   margin-top: 20px;
 }
