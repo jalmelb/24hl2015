@@ -36,9 +36,8 @@
   </div>
   <div class="flex-column flex-4-column">
     <li class="column-item column-dark"></li>
-    <li class="column-item flexgrow">
+    <li class="flexgrow">
       <div class="journal-container">
-        {{ content }}
 
         {{ entries:listing folder="blog" limit="5" }}
         <h4><a href="{{ url }}">{{ title }}</a></h4>
