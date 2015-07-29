@@ -1,9 +1,13 @@
 fields:
   categories:
-    display: Categories
+    display: Tags
     required: false
     default:
     type: tags
+    taxonomy:
+      folder: blog
+      type: tags
+
   content:
     type: redactor
 

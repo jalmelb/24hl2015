@@ -41,19 +41,22 @@
         <div class="journal-container">
           <div class="row">
 
-
-        {{ entries:listing folder="blog" limit="5" }}
-        <div class="row">
-          <ul class="flex-column flex-2-column">
-            <li class="journal-date">
-          <h5><b>{{ date }}</b></h5>
-          </li>
-          <li class="journal-item column-dark">
-        <h4><a href="{{ url }}"><b>{{ title }}</b></a></h4>
-        {{ content }}<br><br>
-      </ul></div>
-        {{ /entries:listing }}
-      </div>
+          {{ entries:listing folder="blog" limit="5" }}
+            <div class="row">
+              <ul class="flex-column flex-2-column">
+                <li class="journal-date column-dark">
+                  <h5><b>{{ date }}</b></h5>
+                    {{ taxonomy:listing folder="blog" type="tags" }}
+                    <a href="{{ url }}">{{ name }}</a>
+                    {{ /taxonomy:listing }}
+                </li>
+                  <li class="journal-item column-dark">
+                    <h4><a href="{{ url }}"><b>{{ title }}</b></a></h4>
+                    {{ content }}
+              </ul>
+            </div>
+            {{ /entries:listing }}
+          </div>
 
       <li class="journal-date column-dark"><b>Who is speaking please?</b><br><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
 

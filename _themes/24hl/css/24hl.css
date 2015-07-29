@@ -2864,7 +2864,6 @@ h5 {
   display: flex;
   -webkit-flex-flow: row wrap;
   justify-content: flex-start;
-  border: 1px solid red;
 }
 .flex-container p {
   margin: 0;
@@ -2882,7 +2881,6 @@ h5 {
   display: flex;
   -webkit-flex-direction: row;
   justify-content: flex-start;
-  border: 1px solid red;
 }
 .flex-wrap p {
   margin: 0;
@@ -2901,7 +2899,6 @@ h5 {
   display: flex;
   -webkit-flex-direction: row;
   justify-content: center;
-  border: 1px solid red;
 }
 .flex-column p {
   margin: 0;
@@ -2913,7 +2910,6 @@ h5 {
   font-weight: 100;
   font-size: 12px;
   text-align: left;
-  border: 1px solid red;
 }
 .column-item.column-no-padding {
   padding: 0;
@@ -2937,17 +2933,15 @@ h5 {
   font-weight: 100;
   font-size: 12px;
   text-align: left;
-  border: 1px solid red;
   width: 25%;
 }
 .journal-item {
-  padding: 20px 10px 20px;
+  padding: 20px 50px 20px;
   line-height: 12px;
   color: #000;
   font-weight: 100;
   font-size: 12px;
   text-align: left;
-  border: 1px solid red;
   width: 75%;
 }
 .flexgrow {
