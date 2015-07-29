@@ -8,6 +8,12 @@ fields:
       folder: blog
       type: tags
 
+  img:
+    display: Image
+    type: file
+    allowed: [png, gif, jpg, jpeg]
+    destination: assets/img/gallery
+
   content:
     type: redactor
 

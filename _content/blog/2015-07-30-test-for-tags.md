@@ -1,0 +1,9 @@
+---
+title: Test for tags
+tags:
+  - late
+  - night
+  - testing
+  - blog
+---
+<img src="/assets/img/gallery/donotdumbhere-20150730000131.jpg" alt=""><p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin non ipsum pretium, venenatis enim quis, ornare mi. Maecenas neque urna, aliquam sit amet sodales quis, eleifend at enim. Vestibulum eget iaculis arcu, vitae consequat turpis. Aenean nec tincidunt metus. Vivamus ullamcorper diam vitae pretium dignissim. Donec id sagittis metus, at rutrum eros. Donec auctor, purus nec lacinia dignissim, tortor diam bibendum arcu, vel gravida lacus sapien vitae purus. Sed luctus interdum nisi, congue porttitor tortor ultrices at. Suspendisse placerat arcu ligula, sit amet pellentesque diam sagittis eu. Curabitur id tincidunt orci, mattis porttitor dolor. Donec quis purus felis. Sed vitae tortor eu purus porta hendrerit maximus ac nibh. Sed sit amet eleifend turpis, eget lacinia ipsum. </p><p> <strong>Cras quis elementum erat. Etiam consectetur dui enim, id convallis mauris pulvinar nec. Sed molestie fringilla elit sed ultrices. Etiam quis maximus sapien. Aenean cursus vehicula neque eget blandit. Vestibulum interdum pulvinar ligula et bibendum. Curabitur in quam dictum, vehicula diam pellentesque, aliquam dui. </strong></p><p> Ut vestibulum eget lectus eget fringilla. Pellentesque dui nisi, porta sit amet feugiat at, consequat sodales metus. Integer suscipit leo facilisis eros feugiat, in congue risus dictum. Cras pharetra nisl ac leo congue, eu cursus dui sollicitudin. Nulla id orci quis magna iaculis euismod ut porttitor quam. Proin vitae magna viverra, porttitor arcu vitae, auctor nisl. Proin eget gravida mauris. Maecenas eleifend non purus vitae maximus. Quisque sit amet elit vel lorem aliquet efficitur. Fusce ullamcorper eros ut euismod tincidunt. </p>
