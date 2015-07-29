@@ -2742,11 +2742,11 @@ h5 {
   text-align: left;
 }
 .page-header-2 {
-  padding: 0px 10px 0px;
-  line-height: 12px;
+  padding: 0;
+  line-height: 18px;
   color: #fa6022;
   font-weight: 700;
-  font-size: 12px;
+  font-size: 18px;
   letter-spacing: 4px;
   text-align: left;
 }
