@@ -32,7 +32,8 @@
   	<li class="column-item"></li>
   </ul>
   <div class="flex-column flex-1-column">
-    <div class="page-seperator-dark"></div>
+    <li class="column-item">
+    <div class="page-seperator-dark"></div></li>
   </div>
 
     <div class="flex-column flex-2-column">
@@ -44,17 +45,17 @@
         {{ entries:listing folder="blog" limit="5" }}
         <div class="row">
           <ul class="flex-column flex-2-column">
-            <li class="column-item">
-          <h5>{{ date }}</h5>
+            <li class="journal-date">
+          <h5><b>{{ date }}</b></h5>
           </li>
-          <li class="column-item column-dark">
+          <li class="journal-item column-dark">
         <h4><a href="{{ url }}"><b>{{ title }}</b></a></h4>
         {{ content }}<br><br>
       </ul></div>
         {{ /entries:listing }}
       </div>
 
-      <li class="column-item column-dark"><b>Who is speaking please?</b><br><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
+      <li class="journal-date column-dark"><b>Who is speaking please?</b><br><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
 
     </div>
   </div>
