@@ -2808,6 +2808,13 @@ h5 {
   right: 0;
   bottom: 0;
 }
+.page-blog .footer {
+  position: fixed;
+  overflow: hidden;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
 .footer-overview {
   text-align: right;
 }
@@ -2881,6 +2888,7 @@ h5 {
   display: flex;
   -webkit-flex-direction: row;
   justify-content: flex-start;
+  border: 1px solid red;
 }
 .flex-wrap p {
   margin: 0;
@@ -2899,8 +2907,28 @@ h5 {
   display: flex;
   -webkit-flex-direction: row;
   justify-content: center;
+  border: 1px solid red;
 }
 .flex-column p {
+  margin: 0;
+}
+.flex-column-blog {
+  padding: 0;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 10px;
+  list-style: none;
+  flex-flow: row nowrap;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  justify-content: center;
+  border: 1px solid red;
+}
+.flex-column-blog p {
   margin: 0;
 }
 .column-item {
@@ -2910,6 +2938,7 @@ h5 {
   font-weight: 100;
   font-size: 12px;
   text-align: left;
+  border: 1px solid red;
 }
 .column-item.column-no-padding {
   padding: 0;
@@ -2933,6 +2962,7 @@ h5 {
   font-weight: 100;
   font-size: 12px;
   text-align: left;
+  border: 1px solid red;
   width: 25%;
 }
 .journal-item {
@@ -2942,6 +2972,7 @@ h5 {
   font-weight: 100;
   font-size: 12px;
   text-align: left;
+  border: 1px solid red;
   width: 75%;
 }
 .flexgrow {
@@ -2964,6 +2995,18 @@ h5 {
 }
 .journal-container a {
   color: #fff;
+}
+.pagination-previous {
+  padding-top: 80px;
+  padding-left: 0;
+  text-align: left;
+  border: 1px solid red;
+}
+.pagination-next {
+  padding-top: 80px;
+  padding-right: 0;
+  text-align: right;
+  border: 1px solid red;
 }
 .column-dark {
   line-height: 12px;

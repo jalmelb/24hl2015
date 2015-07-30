@@ -25,25 +25,7 @@
   </head>
   <body id="top" class="page-{{segment_1}}">
 
-    <header class="header">
-      <div class="container">
-
-
-
-        <nav class="block-navigation">
-          <ul class="nav nav-main" role="navigation">
-            {{ nav from="/" }}
-              <li {{ if is_current || is_parent }} class="nav-active"{{ endif }}>
-                <a href="{{ url }}">
-                  {{ title }}
-                </a>
-              </li>
-            {{ /nav }}
-          </ul>
-
-        </nav>
-      </div>
-    </header>
+    
 
 
     {{ layout_content }}

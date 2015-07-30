@@ -1,24 +1,54 @@
-<div class="row">
-	<div class="eight columns">
+<!-- particles.js container -->
+
+<div id="particles-js"></div>
+
+
+<!-- scripts -->
+<script src="/_themes/24hl/js/particles.js"></script>
+<script src="/_themes/24hl/js/app.js"></script>
+
+<div class="journal-nav">
+  <nav class="block-navigation">
+    <ul class="nav nav-dark" role="navigation">
+      <li><a href="/">HOME</a>
+        <li><a href="/Work">WORK</a>
+        <li><a href="/#About">ABOUT</a>
+        <li><a href="/Journal">JOURNAL</a>
+        <li><a href="/#Contact">CONTACT</a>
+      </li>
+    </ul>
+  </nav>
+</div>
+
+
+<div class="journal-layout">
+  <ul class="flex-column flex-2-column">
+  	<li class="column-item column-dark">
 		<div class="article">
 			<h1>{{ title|smartypants|widont }}</h1>
 			<p class="time">
 				Recorded on {{ date }}
 			</p>
-
+			<br>
 			{{ content|widont }}
-		</div>
-		
-		<div class="pagination">
-			{{ entries:previous folder="blog" }}
-				{{ if !no_results }}
+
+
+
+		<ul class="flex-column-blog flex-2-column">
+			<li class="column-item pagination-previous">
+
+					{{ entries:previous folder="blog" }}
+					{{ if !no_results }}
 					<a href="{{ url }}" class="older">
 						<small>Previously</small><br>
 						{{ title|widont }}
 					</a>
 				{{ endif }}
 			{{ /entries:previous }}
-			
+		</li>
+
+		<li class="column-item pagination-next">
+
 			{{ entries:next folder="blog" }}
 				{{ if !no_results }}
 					<a href="{{ url }}" class="newer">
@@ -27,9 +57,10 @@
 					</a>
 				{{ endif }}
 			{{ /entries:next }}
-		</div>
-	</div>
-	<div class="four columns sidebar" role="complementary">
-		{{ theme:partial src="common-sidebar" }}
-	</div>
+		</li>
+
+	</ul>
+</div>
+</div>
+
 </div>
