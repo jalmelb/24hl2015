@@ -17,8 +17,9 @@
 
 
 <ul class="flex-column flex-4-column">
+	{{ work }}
 	<li class="column-item column-no-padding">
-		{{ entries:listing folder="work" limit="4" }}
+		{{ entries:listing folder="workitems" limit="4" }}
 			<a href="{{ url }}">
         <img src="{{ transform src="{{ img }}" width="350" height="220" }}">
 				{{ title }}

@@ -2815,6 +2815,13 @@ h5 {
   right: 0;
   bottom: 0;
 }
+.page-work .footer {
+  position: fixed;
+  overflow: hidden;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
 .footer-overview {
   text-align: right;
 }
