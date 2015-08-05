@@ -4,8 +4,6 @@ fields:
     required: false
     default:
     type: tags
-
-
   content:
     display: Content
     type: redactor
@@ -15,5 +13,10 @@ fields:
       height: 300
       quality: 60
       upsize: false
+  img:
+    display: Image
+    type: file
+    allowed: [png, gif, jpg, jpeg]
+    destination: assets/img/gallery
 
 hide: false

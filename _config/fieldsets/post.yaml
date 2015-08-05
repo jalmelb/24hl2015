@@ -7,7 +7,6 @@ fields:
     taxonomy:
       folder: blog
       type: tags
-
   img:
     display: Image
     type: file
