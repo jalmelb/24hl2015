@@ -26,20 +26,23 @@
 
 		<img src="/assets/img/domoto_large.jpg" alt="domoto logo" height="800" width="1200">
 
-		
+
 	</li>
 
 
 </ul>
 <br><br><br>
 
-          <div class="list-files">
-            {{ files }}
-              <a class="list-file" href="{{ filePath }}">
-                {{ title }} {{ description }}
-              </a>
-            {{ /files }}
-          </div>
+          <ul class="gallery">
+            {{ gallery }}
+							<li>
+								<a href="{{ img }}">
+								<img src="{{ img }}" alt="{{ title }}">
+								<div>{{ title }}</div>
+								</a>
+							</li>
+						{{ /gallery }}
+					</ul>
 
         </div>
       </div>
