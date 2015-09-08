@@ -2717,7 +2717,7 @@ h5 {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 1000px;
+  height: 800px;
 }
 @media (max-width: 1199px) {
   .contact-background {
@@ -2796,6 +2796,10 @@ h5 {
   margin: 0;
   font-size: 12px;
   letter-spacing: 3px;
+}
+.homenav:hover {
+  color: #fff;
+  text-decoration: none;
 }
 .row-fifths > div {
   width: 20%;
