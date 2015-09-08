@@ -6,3 +6,5 @@ _cache/_app/content/last.php
 .elasticbeanstalk/*
 !.elasticbeanstalk/*.cfg.yml
 !.elasticbeanstalk/*.global.yml
+
+.ftppass
