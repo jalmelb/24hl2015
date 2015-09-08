@@ -2747,6 +2747,7 @@ h5 {
 }
 .page-header-2 {
   padding: 0;
+  margin-top: 45px;
   line-height: 18px;
   color: #fa6022;
   font-weight: 700;
@@ -2839,9 +2840,17 @@ h5 {
 }
 .page-seperator {
   border-bottom: 1px solid;
-  color: #000;
-  padding: 10px 30px;
+  color: #999999;
+  padding: 10px 10px;
   margin-top: 20px;
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-grow: 1;
+  -webkit-flex-flow: row nowrap;
 }
 .page-seperator-dark {
   border-bottom: 1px solid;
@@ -2882,6 +2891,7 @@ h5 {
   display: flex;
   -webkit-flex-flow: row wrap;
   justify-content: flex-start;
+  border: 1px solid red;
 }
 .flex-container p {
   margin: 0;
@@ -2939,10 +2949,10 @@ h5 {
     flex-flow: row wrap;
   }
 }
-.flex-column-blog {
+.flex-column-seperator {
   padding: 0;
-  margin-left: 0px;
-  margin-right: 0px;
+  margin-left: 40px;
+  margin-right: 40px;
   margin-bottom: 10px;
   list-style: none;
   flex-flow: row nowrap;
@@ -2952,11 +2962,17 @@ h5 {
   display: -webkit-flex;
   display: flex;
   -webkit-flex-direction: row;
-  justify-content: center;
+  justify-content: flex-start;
   border: 1px solid red;
 }
-.flex-column-blog p {
+.flex-column-seperator p {
   margin: 0;
+}
+@media (max-width: 767px) {
+  .flex-column-seperator {
+    justify-content: flex-start;
+    flex-flow: row nowrap;
+  }
 }
 .column-item {
   padding: 0px 10px 20px;
@@ -2974,6 +2990,13 @@ h5 {
 }
 .column-item.column-no-padding img {
   width: 100% !important;
+}
+.column-item.column-no-padding-left {
+  padding-left: 10px;
+  padding-right: 0px;
+}
+.column-item.column-no-padding-right {
+  padding-left: 0px;
 }
 .flex-4-column .column-item {
   width: 25%;
