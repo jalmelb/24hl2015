@@ -8,3 +8,5 @@ _cache/_app/content/last.php
 !.elasticbeanstalk/*.global.yml
 
 .ftppass
+
+_themes/24hl/css/24hl.min.css
