@@ -142,7 +142,7 @@ img {
       float: none;
 
       > a {
-        background: @gray-lighter;
+
         padding: 5px 20px;
       }
     }
@@ -220,7 +220,7 @@ h5 {
         right:15px;
         line-height: 30px;
 
-        font-size:30px;
+        font-size:14px;
       }
     }
   }
@@ -236,6 +236,10 @@ h5 {
   -o-background-size: cover;
   background-size: cover;
   height: 1100px;
+
+  @media (max-width: @screen-xs-max) {
+  height: 1500px;
+}
 
   .container {
    position: relative;
@@ -335,7 +339,6 @@ h5 {
   color:@color-orange;
 
 
-
   a {
     color:@white;
   }
@@ -376,7 +379,7 @@ h5 {
   }
 
   @media (max-width: @screen-xs-max) {
-    text-align:center;
+    text-align:right;
   }
 }
 
@@ -492,6 +495,18 @@ h5 {
     margin:0;
   }
 
+  @media (max-width: @screen-md-max) {
+    justify-content: flex-start;
+  }
+
+  @media (max-width: @screen-sm-max) {
+    justify-content: flex-start;
+  }
+
+  @media (max-width: @screen-xs-max) {
+    justify-content: flex-start;
+    flex-flow: row wrap;
+  }
 }
 
 .flex-column-blog {
@@ -527,8 +542,8 @@ h5 {
   font-size: 12px;
   text-align: left;
   border: 1px solid red;
-  min-width: 350px;
-  max-width: 350px;
+  min-width: 300px;
+  max-width: 300px;
 
 
 
@@ -560,8 +575,6 @@ h5 {
   font-weight: 100;
   font-size: 12px;
   text-align: left;
-  border: 1px solid red;
-  
 
 
 

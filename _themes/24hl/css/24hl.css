@@ -2654,7 +2654,6 @@ img {
     float: none;
   }
   .nav-dark > li > a {
-    background: #eeeeee;
     padding: 5px 20px;
   }
 }
@@ -2709,7 +2708,7 @@ h5 {
     left: 15px;
     right: 15px;
     line-height: 30px;
-    font-size: 30px;
+    font-size: 14px;
   }
 }
 .contact-background {
@@ -2719,6 +2718,11 @@ h5 {
   -o-background-size: cover;
   background-size: cover;
   height: 1100px;
+}
+@media (max-width: 767px) {
+  .contact-background {
+    height: 1500px;
+  }
 }
 .contact-background .container {
   position: relative;
@@ -2830,7 +2834,7 @@ h5 {
 }
 @media (max-width: 767px) {
   .footer-overview {
-    text-align: center;
+    text-align: right;
   }
 }
 .page-seperator {
@@ -2919,6 +2923,22 @@ h5 {
 .flex-column p {
   margin: 0;
 }
+@media (max-width: 1199px) {
+  .flex-column {
+    justify-content: flex-start;
+  }
+}
+@media (max-width: 991px) {
+  .flex-column {
+    justify-content: flex-start;
+  }
+}
+@media (max-width: 767px) {
+  .flex-column {
+    justify-content: flex-start;
+    flex-flow: row wrap;
+  }
+}
 .flex-column-blog {
   padding: 0;
   margin-left: 0px;
@@ -2946,8 +2966,8 @@ h5 {
   font-size: 12px;
   text-align: left;
   border: 1px solid red;
-  min-width: 350px;
-  max-width: 350px;
+  min-width: 300px;
+  max-width: 300px;
 }
 .column-item.column-no-padding {
   padding: 0;
@@ -2971,7 +2991,6 @@ h5 {
   font-weight: 100;
   font-size: 12px;
   text-align: left;
-  border: 1px solid red;
 }
 .column-item-header.column-no-padding {
   padding: 0;
