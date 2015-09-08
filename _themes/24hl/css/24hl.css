@@ -2946,6 +2946,8 @@ h5 {
   font-size: 12px;
   text-align: left;
   border: 1px solid red;
+  min-width: 350px;
+  max-width: 350px;
 }
 .column-item.column-no-padding {
   padding: 0;
@@ -2960,6 +2962,30 @@ h5 {
   width: 50%;
 }
 .flex-1-column .column-item {
+  width: 100%;
+}
+.column-item-header {
+  padding: 20px 10px 20px;
+  line-height: 14px;
+  color: #000;
+  font-weight: 100;
+  font-size: 12px;
+  text-align: left;
+  border: 1px solid red;
+}
+.column-item-header.column-no-padding {
+  padding: 0;
+}
+.column-item-header.column-no-padding img {
+  width: 100% !important;
+}
+.flex-4-column .column-item-header {
+  width: 25%;
+}
+.flex-2-column .column-item-header {
+  width: 50%;
+}
+.flex-1-column .column-item-header {
   width: 100%;
 }
 .journal-date {
