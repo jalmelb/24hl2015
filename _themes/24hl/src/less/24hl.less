@@ -235,10 +235,17 @@ h5 {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 1100px;
+  height: 1000px;
 
+  @media (max-width: @screen-md-max) {
+  height: 800px;
+}
+
+  @media (max-width: @screen-sm-max) {
+  height: 800px;
+}
   @media (max-width: @screen-xs-max) {
-  height: 1500px;
+  height: 1100px;
 }
 
   .container {
@@ -452,7 +459,7 @@ h5 {
 
   -webkit-flex-flow: row wrap;
   justify-content: flex-start;
-  border: 1px solid red;
+  //border: 1px solid red;
 
   p {
     margin:0;
@@ -477,7 +484,7 @@ h5 {
 
   -webkit-flex-direction: row;
   justify-content: flex-start;
-  border: 1px solid red;
+  //border: 1px solid red;
 
   p {
     margin:0;
@@ -502,7 +509,7 @@ h5 {
 
   -webkit-flex-direction: row;
   justify-content: center;
-  border: 1px solid red;
+  //border: 1px solid red;
 
   p {
     margin:0;
@@ -539,11 +546,21 @@ h5 {
   display: flex;
 
   -webkit-flex-direction: row;
-  justify-content: flex-start;
-  border: 1px solid red;
+  justify-content: center;
+  //border: 1px solid red;
 
   p {
     margin:0;
+  }
+
+  @media (max-width: @screen-md-max) {
+    justify-content: flex-start;
+    flex-flow: row nowrap;
+  }
+
+  @media (max-width: @screen-sm-max) {
+    justify-content: flex-start;
+    flex-flow: row nowrap;
   }
 
   @media (max-width: @screen-xs-max) {
@@ -559,7 +576,7 @@ h5 {
   font-weight: 100;
   font-size: 12px;
   text-align: left;
-  border: 1px solid red;
+  //border: 1px solid red;
   min-width: 300px;
   max-width: 300px;
 
@@ -581,7 +598,8 @@ h5 {
 
   &.column-no-padding-right {
     padding-left: 0px;
-    
+    padding-right: 0px;
+
 
   }
 
@@ -608,7 +626,7 @@ h5 {
   font-weight: 100;
   font-size: 12px;
   text-align: left;
-  border: 1px solid red;
+  //border: 1px solid red;
   width: 25%;
 }
 .journal-item {
@@ -618,7 +636,7 @@ h5 {
   font-weight: 100;
   font-size: 12px;
   text-align: left;
-  border: 1px solid red;
+  //border: 1px solid red;
   width: 75%;
 }
 
@@ -656,13 +674,13 @@ h5 {
   padding-top: 80px;
   padding-left: 0;
   text-align: left;
-  border: 1px solid red;
+  //border: 1px solid red;
 }
 .pagination-next {
   padding-top: 80px;
   padding-right: 0;
   text-align: right;
-  border: 1px solid red;
+  //border: 1px solid red;
 }
 .column-dark {
   line-height: 14px;
