@@ -2598,6 +2598,11 @@ img {
 .header a {
   color: #000;
 }
+a,
+a:active,
+a:focus {
+  outline: none;
+}
 .nav-main {
   margin: 0;
   margin-bottom: 50px;
@@ -2789,7 +2794,7 @@ h5 {
   text-decoration: none;
 }
 .boldnumbers:hover {
-  color: #ed9a45;
+  color: #fff;
   text-decoration: none;
 }
 .homenav {
