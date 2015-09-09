@@ -292,7 +292,7 @@ a {
 a:hover,
 a:focus {
   color: #cb3e05;
-  text-decoration: underline;
+  text-decoration: none;
 }
 a:focus {
   outline: thin dotted;
@@ -2788,6 +2788,10 @@ h5 {
   color: #fff;
   text-decoration: none;
 }
+.boldnumbers:hover {
+  color: #ed9a45;
+  text-decoration: none;
+}
 .homenav {
   color: #fff;
   font-weight: 100;
@@ -2798,7 +2802,7 @@ h5 {
   letter-spacing: 3px;
 }
 .homenav:hover {
-  color: #fff;
+  color: #ed9a45;
   text-decoration: none;
 }
 .row-fifths > div {
